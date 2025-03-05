@@ -34,6 +34,7 @@ input, .main-btn, .secondary-btn, select, option{
   justify-content: center;
   background-color: #000;
   color: #fff;
+  font-size: var(--txt-fs);
 }
 
 input, select{
@@ -42,6 +43,9 @@ input, select{
 
 .main-btn, .secondary-btn{
   padding: 5px 40px;
+  min-width: 200px !important;
+  margin: 5px 0;
+  cursor: pointer;
 }
 
 .title{
@@ -59,15 +63,13 @@ input, select{
 }
 
 .main-btn{
-  font-size: var(--txt-fs);
-  background-color: var(--fg-orng);
-  transition: all ease-in-out .1s;
+  background-color: #000;
 }
 
 .secondary-btn{
-  font-size: var(--txt-fs);
   border: 2px solid #000;
-  transition: all ease-in-out .1s;
+  color: #000;
+  background: none;
 }
 
 .link{
@@ -93,6 +95,8 @@ header{
   z-index: 100;
   gap: 30px;
   padding: 0 10%;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
 }
 
 nav{
@@ -114,13 +118,32 @@ nav{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: start;
   gap: 20px;
   padding: 10% 10%;
   margin-top: 60px;
 }
 
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 50px;
+  align-items: center;
+  padding: 20px 30px;
+  max-width: 100vw;
+  width: 100%;
+  border-top: 1px solid #000;
+  background-color: #fff;
+}
 
+footer > *{
+  width: 100%;
+}
+
+footer #credits, footer #infos{
+  flex: 1;
+}
 
 
 
@@ -141,6 +164,10 @@ nav{
 
   nav{
       gap: 20px;
+  }
+
+  .content{
+    margin-top: 0;
   }
 }
 
@@ -194,5 +221,17 @@ nav{
   nav span{
       width: 100%;
       text-align: center;
+  }
+
+  footer{
+      flex-direction: column;
+  }
+
+  .content{
+    margin-top: 0;
+  }
+
+  .main-btn, .secondary-btn{
+    min-width: 250px !important;
   }
 }

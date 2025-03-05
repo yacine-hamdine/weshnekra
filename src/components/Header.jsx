@@ -37,9 +37,9 @@ function Header() {
             </nav>
             <div id="lang">
                 <select id="languageSelector" onChange={(e) => loadLanguage(e.target.value)} value={language}>
-                    <option value="en">&#127468;</option>
-                    <option value="fr">&#127467;</option>
-                    <option value="ar">&#127465;</option>
+                    <option value="en">🇬🇧</option>
+                    <option value="fr">🇫🇷</option>
+                    <option value="ar">🇩🇿</option>
                 </select>
             </div>
         </header>
