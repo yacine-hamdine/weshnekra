@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../contexts/language"; // Import the context
 import { Link } from "react-router-dom";
+import Menu from "../styles/menu.jsx";
 
 
 function Header() {
@@ -18,7 +19,8 @@ function Header() {
             <div id="logo" className="subtitle">
                 WeshNekra
             </div>
-            <nav id="menu">
+            <Menu />
+            {/* <nav id="menu">
                  <Link to="/">
                    <span className="text link">
                         {data.home}
@@ -34,7 +36,7 @@ function Header() {
                         {data.results}
                     </span>
                 </Link>
-            </nav>
+            </nav> */}
             <div id="lang">
                 <select id="languageSelector" onChange={(e) => loadLanguage(e.target.value)} value={language}>
                     <option value="en">🇬🇧</option>

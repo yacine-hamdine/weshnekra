@@ -1,5 +1,20 @@
 {
     "home": "Accueil",
     "quiz": "Quiz",
-    "results": "Resultats"
+    "results": "Résultats",
+
+    "credits": "Crédits",
+    "ideaBy": "Idée par",
+    "builtBy": "Développé par",
+    "ryane": "Ryane Afnoukh Saada",
+    "yacine": "Yacine Hamdine",
+    "samy": "Samy Berrich",
+    "about": "À propos",
+    "infos": "WeshNekra est une solution qui aide les étudiants à choisir leur parcours académique supérieur à travers un quiz catégorisé et spécialisé. C'est un projet développé en 2025 par un groupe d'étudiants à Alger, Algérie.",
+    "copyright": "Tous droits réservés",
+
+    "heroTitle": "Déterminez Votre Parcours Académique en Toute Simplicité",
+    "heroText": "Bienvenue sur notre plateforme dédiée aux étudiants algériens ! Nous vous aidons à explorer vos passions et à choisir le domaine qui vous correspond le mieux.",
+    "startQuiz": "Commencer",
+    "specialQuiz": "Test Spécialisé"
 }

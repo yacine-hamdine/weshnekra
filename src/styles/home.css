@@ -40,6 +40,12 @@
     /* Mobile */
     #hero{
         flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    #hero-content{
+        gap: 30px;
     }
 
     #cta-btns{
