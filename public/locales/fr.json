@@ -6,7 +6,7 @@
     "credits": "Crédits",
     "ideaBy": "Idée par",
     "builtBy": "Développé par",
-    "ryane": "Ryane Afnoukh Saada",
+    "ryane": "Saada Ryane Afnoukh",
     "yacine": "Yacine Hamdine",
     "samy": "Samy Berrich",
     "about": "À propos",
@@ -16,5 +16,15 @@
     "heroTitle": "Déterminez Votre Parcours Académique en Toute Simplicité",
     "heroText": "Bienvenue sur notre plateforme dédiée aux étudiants algériens ! Nous vous aidons à explorer vos passions et à choisir le domaine qui vous correspond le mieux.",
     "startQuiz": "Commencer",
-    "specialQuiz": "Test Spécialisé"
+    "specialQuiz": "Test Spécialisé",
+
+    "exploreTitle": "Découvrez Nos Fonctionnalités Uniques et Interactives",
+    "exploreText": "Nous proposons des quiz interactifs qui aident les nouveaux bacheliers à identifier leurs centres d'intérêt et leurs compétences. En fonction de leurs réponses, nous fournissons une liste de domaines recommandés correspondant à leur profil.",
+    "feature1Title": "Quiz interactif pour évaluer vos intérêts",
+    "feature1Text": "Faites notre quiz pour découvrir votre parcours.",
+    "feature2Title": "Recommandations personnalisées basées sur vos réponses",
+    "feature2Text": "Recevez des conseils sur mesure pour votre avenir.",
+    "feature3Title": "Ressources éducatives pour approfondir vos connaissances",
+    "feature3Text": "Accédez à des articles et guides utiles.",
+    "knowMore": "En savoir plus >"
 }

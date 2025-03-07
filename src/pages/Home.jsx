@@ -2,37 +2,113 @@ import React, { useContext } from "react";
 import { LanguageContext } from "../contexts/language"; // Import the context
 import { Link } from "react-router-dom";
 import "../styles/home.css";
+import QuizIcon from "../assets/icons/quiz.svg";
+import RecommendationsIcon from "../assets/icons/spkl.svg";
+import EducationIcon from "../assets/icons/educ.svg";
 
 const Home = () => {
 
-  const { language, loadLanguage, translations } = useContext(LanguageContext);
+  const { translations } = useContext(LanguageContext);
   const data = translations;
 
   return (
-    <div id="hero">
-      <div id="hero-title">
-        <h1 className="title">
-          {data.heroTitle}
-        </h1>
-      </div>
-      <div id="hero-content">
-        <div id="hero-text">
-          {data.heroText}
+    <>
+      <div id="hero">
+        <div id="hero-title">
+          <h1 className="title">
+            {data.heroTitle}
+          </h1>
         </div>
-        <div id="cta-btns">
-          <Link to={"/quiz/start"}>
-            <button className="main-btn">
-              {data.startQuiz}
-            </button>
-          </Link>
-          <Link to={"/quiz/special"}>
-            <button className="secondary-btn">
-              {data.specialQuiz}
-            </button>
-          </Link>
+        <div id="hero-content">
+          <div id="hero-text">
+            {data.heroText}
+          </div>
+          <div id="cta-btns">
+            <Link to={"/quiz/start"}>
+              <button className="main-btn">
+                {data.startQuiz}
+              </button>
+            </Link>
+            <Link to={"/quiz/special"}>
+              <button className="secondary-btn">
+                {data.specialQuiz}
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
-    </div>
+      <div id="explore">
+        <div id="explore-title">
+          <h2 className="title">
+            {data.exploreTitle}
+          </h2>
+        </div>
+        <div id="explore-content">
+          <div id="explore-text">
+            {data.exploreText}
+          </div>
+          <div id="explore-cards">
+            <div id="card1">
+              <div>
+                <img src={QuizIcon} alt="Quiz" />
+              </div>  
+              <div>
+                <h3 className="subtitle">
+                  {data.feature1Title}
+                </h3>
+              </div>
+              <div>
+                <p className="text">
+                  {data.feature1Text}
+                </p>
+              </div>
+            </div>
+            <div id="card2">
+              <div>
+                <img src={RecommendationsIcon} alt="Recommendations" />
+              </div>
+              <div>
+                <h3 className="subtitle">
+                  {data.feature2Title}
+                </h3>
+              </div>
+              <div>
+                <p className="text">
+                  {data.feature2Text}
+                </p>
+              </div>
+            </div>
+            <div id="card3">
+            <div>
+                <img src={EducationIcon} alt="Education" />
+              </div>
+              <div>
+                <h3 className="subtitle">
+                  {data.feature3Title}
+                </h3>
+              </div>
+              <div>
+                <p className="text">
+                  {data.feature3Text}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="explore-btns">
+            <Link to={"/quiz/start"}>
+              <button className="secondary-btn">
+                {data.startQuiz}
+              </button>
+            </Link>
+            <Link to={"/quiz"}>
+              <span className="link">
+                {data.knowMore}
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 

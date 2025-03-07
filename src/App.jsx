@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import Layout from './components/Layout.jsx'
 import Home from './pages/Home.jsx'
 import Quiz from './pages/Quiz.jsx'

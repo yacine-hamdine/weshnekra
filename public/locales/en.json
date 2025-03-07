@@ -6,7 +6,7 @@
     "credits": "Credits",
     "ideaBy": "Idea by",
     "builtBy": "Built by",
-    "ryane": "Ryane Afnoukh Saada",
+    "ryane": "Saada Ryane Afnoukh",
     "yacine": "Yacine Hamdine",
     "samy": "Samy Berrich",
     "about": "About",
@@ -16,5 +16,15 @@
     "heroTitle": "Determine Your Acedemic Path With Ease",
     "heroText": "Welcome to our platform dedicated for Algerian students ! We help you explore your passions and choose the field that fits you the best.",
     "startQuiz": "Start",
-    "specialQuiz": "Specialized Test"
+    "specialQuiz": "Specialized Test",
+
+    "exploreTitle": "Discover Our Unique and Interactive Features",
+    "exploreText": "We offer interavtive quizzes that will help new baccalaureate's graduated students identify their interests and skills. Based on the answers, we provide a list of recommended fields that match their profile.",
+    "feature1Title": "Interactive quiz to assess your interests",
+    "feature1Text": "Take our quiz to discover your path.",
+    "feature2Title": "Personalized recommendations based on your answers",
+    "feature2Text": "Receive tailor-made advice for your future.",
+    "feature3Title": "Educational resources to deepen your knowledge",
+    "feature3Text": "Access helpful articles and guides.",
+    "knowMore": "Know More >"
 }

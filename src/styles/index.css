@@ -113,6 +113,10 @@ nav{
   display: none;
 }
 
+#logo{
+  user-select: none;
+}
+
 #lang{
   cursor: pointer;
   display: flex;
@@ -128,7 +132,7 @@ nav{
   align-items: center;
   justify-content: start;
   gap: 20px;
-  padding: 10% 10%;
+  padding: 5% 10%;
   margin-top: 60px;
 }
 

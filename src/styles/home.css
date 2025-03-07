@@ -3,7 +3,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: start;
+    gap: 20px;
 }
 
 #hero-text{
@@ -18,6 +19,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 10px;
+    width: 100%;
 }
 
 #hero-content{
@@ -26,6 +28,56 @@
     justify-content: space-between;
     align-items: center;
     gap: 20px;
+    min-height: 100%;
+}
+
+#explore{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#explore-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+#explore-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#explore-cards > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+#explore-cards img{
+    width: 60px;
+}
+
+#explore-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
 }
 
 @media screen and (min-width: 767px) and (max-width: 991px){
@@ -49,6 +101,10 @@
     }
 
     #cta-btns{
+        flex-direction: column;
+    }
+
+    #explore-cards{
         flex-direction: column;
     }
 
