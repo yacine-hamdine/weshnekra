@@ -26,5 +26,27 @@
     "feature2Text": "Recevez des conseils sur mesure pour votre avenir.",
     "feature3Title": "Ressources éducatives pour approfondir vos connaissances",
     "feature3Text": "Accédez à des articles et guides utiles.",
-    "knowMore": "En savoir plus >"
+    "knowMore": "En savoir plus >",
+
+    "quizInstructions": "Instructions du Test",
+    "quizInstruction1": "Chaque test se compose de 20 à 50 questions.",
+    "quizInstruction2": "Pour chaque question, indiquez votre niveau d'accord sur une échelle de 0 à 5.",
+    "quizInstruction3": "Prenez votre temps et répondez honnêtement pour obtenir les meilleurs résultats.",
+    "quizWarningTitle": "Attention !",
+    "quizWarningText": "Ce test est conçu uniquement comme un outil d’orientation. Il ne remplace en aucun cas une réflexion personnelle approfondie ou un accompagnement professionnel.",
+    "quizSelect": "Choisissez un test pour commencer",
+    "genCatName": "Test Général",
+    "genCatDescription": "Ce test est conçu pour vous aider à identifier vos intérêts et compétences avec des résultats catégorisés.",
+    "xctSciName": "Sciences Exactes",
+    "xctSciDescription": "Mathématiques, Physique, Chimie et Sciences de l'Ingénieur.",
+    "hmnSciName": "Sciences Humaines et Sociales",
+    "hmnSciDescription": "Psychologie, Sociologie, Histoire et Sciences Politiques.",
+    "lthSciName": "Sciences de la Santé",
+    "lthSciDescription": "Médecine, Pharmacie et Sciences Biomédicales.",
+    "lngLitName": "Langues et Littérature",
+    "lngLitDescription": "Littérature, Linguistique et Traduction.",
+    "ecnBsnName": "Économie et Gestion",
+    "ecnBsnDescription": "Économie, Finance, Gestion et Marketing.",
+    "sprSciName": "Sciences du Sport",
+    "sprSciDescription": "Éducation Physique, Management du Sport et Coaching."
 }

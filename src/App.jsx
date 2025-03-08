@@ -13,7 +13,7 @@ const Router = createBrowserRouter([
     element: <Layout />,  // Wrap everything in Layout
     children: [
       { path: '/', element: <Home /> },
-      { path: '/quiz', element: <Quiz />, children: [{ path: 'start', element: <StartQuiz /> }, { path: 'special', element: <SpecialQuiz /> }] },
+      { path: '/quiz', element: <Quiz />, children: [{ path: 'start', element: <StartQuiz /> }, { path: 'special/:category', element: <SpecialQuiz /> }] },
       { path: '/results', element: <Results /> },
       { path: '*', element: <NotFoundPage /> },
     ],

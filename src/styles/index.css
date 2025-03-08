@@ -26,6 +26,7 @@ a{
 .title{
   font-size: var(--ttls-fs);
   font-weight: 900;
+  word-break: break-word;
 }
 
 .subtitle{
@@ -55,8 +56,8 @@ input, select{
   padding: 7px 15px;
 }
 
-.main-btn, .secondary-btn{
-  min-width: 200px !important;
+.main-btn, .secondary-btn, a{
+  width: 100% !important;
   margin: 5px 0;
   cursor: pointer;
 }
@@ -134,6 +135,11 @@ nav{
   gap: 20px;
   padding: 5% 10%;
   margin-top: 60px;
+}
+
+.content > *{
+  width: 100%;
+  text-align: center;
 }
 
 footer{
@@ -245,7 +251,4 @@ footer #credits, footer #infos{
     padding: 5% 5%;
   }
 
-  .main-btn, .secondary-btn{
-    min-width: 250px !important;
-  }
 }

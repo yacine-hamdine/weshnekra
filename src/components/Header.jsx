@@ -6,8 +6,7 @@ import Menu from "../styles/menu.jsx";
 
 function Header() {
 
-    const { language, loadLanguage, translations } = useContext(LanguageContext);
-    const data = translations;
+    const { language, loadLanguage } = useContext(LanguageContext);
 
     return (
         <header>
@@ -20,23 +19,6 @@ function Header() {
                 WeshNekra
             </div>
             <Menu />
-            {/* <nav id="menu">
-                 <Link to="/">
-                   <span className="text link">
-                        {data.home}
-                    </span>
-                </Link>
-                <Link to="/quiz">
-                    <span className="text link">
-                        {data.quiz}
-                    </span>
-                </Link>
-                <Link to="/results">
-                    <span className="text link">
-                        {data.results}
-                    </span>
-                </Link>
-            </nav> */}
             <div id="lang">
                 <select id="languageSelector" onChange={(e) => loadLanguage(e.target.value)} value={language}>
                     <option value="en">🇬🇧</option>

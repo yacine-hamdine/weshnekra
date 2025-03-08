@@ -26,5 +26,28 @@
     "feature2Text": "Receive tailor-made advice for your future.",
     "feature3Title": "Educational resources to deepen your knowledge",
     "feature3Text": "Access helpful articles and guides.",
-    "knowMore": "Know More >"
+    "knowMore": "Know More >",
+
+    "quizInstructions": "Tests Instructions",
+    "quizInstruction1": "Each Quiz consists of 20-50 questions.",
+    "quizInstruction2": "For each question, indicate your level of agreement on a scale of 0 to 5.",
+    "quizInstruction3": "Take your time and answer honestly to get the best results.",
+    "quizWarningTitle": "Warning !",
+    "quizWarningText": "This test is designed solely as a tool to help with orientation. It is in no way a substitute for in-depth personal reflection or professional support.",
+    "quizSelect": "Choose a Test to start",
+    "genCatName": "General Test",
+    "genCatDescription": "This test is designed to help you identify your interests and skills in a categorized results.",
+    "xctSciName": "Exact Sciences",
+    "xctSciDescription": "Mathematics, Physics, Chemistry and Engineer's sciences.",
+    "hmnSciName": "Human & Social Sciences",
+    "hmnSciDescription": "Psychology, Sociology, History and Political Sciences.",
+    "lthSciName": "Health Sciences",
+    "lthSciDescription": "Medicine, Pharmacy and Biomedical Sciences.",
+    "lngLitName": "Languages & Literature",
+    "lngLitDescription": "Literature, Linguistics and Translation.",
+    "ecnBsnName": "Economics & Management",
+    "ecnBsnDescription": "Economics, Finance, Management and Marketing.",
+    "sprSciName": "Sport Sciences",
+    "sprSciDescription": "Physical Education, Sports Management and Coaching."
+
 }
