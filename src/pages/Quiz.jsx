@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../contexts/language"; // Import the context
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../styles/quiz.css";
 import GenCatIcon from "../assets/icons/gen-cat.svg";
 import XctSciIcon from "../assets/icons/xct-sci.svg";
@@ -20,8 +20,10 @@ const Quiz = () => {
       {
         // TODO: add a "Continue Quiz" component if user has already started the quiz and has not finished it
       }
+      <div id="quiz-header">
+        <h1 className="title">{data.quiz}</h1>
+      </div>
       <div id="quiz-presentation">
-        <h2 className="title">{data.quiz}</h2>
         <div id="quiz-instructions">
           <h3 className="subtitle">{data.quizInstructions}</h3>
           <ul className="text">
@@ -179,7 +181,6 @@ const Quiz = () => {
           </div>
         </div>
       </div>
-      <Outlet/>
     </>
   )
 }

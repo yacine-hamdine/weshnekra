@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { LanguageContext } from "../contexts/language"; // Import the context
 import { Link } from "react-router-dom";
 import "../styles/home.css";
+import HeroImg from "../assets/images/hero.svg";
 import QuizIcon from "../assets/icons/quiz.svg";
 import RecommendationsIcon from "../assets/icons/spkl.svg";
 import EducationIcon from "../assets/icons/educ.svg";
@@ -14,12 +15,15 @@ const Home = () => {
   return (
     <>
       <div id="hero">
-        <div id="hero-title">
-          <h1 className="title">
-            {data.heroTitle}
-          </h1>
+        <div id="hero-image">
+          <img src={HeroImg} alt="Hero Image" />
         </div>
         <div id="hero-content">
+          <div id="hero-title">
+            <h1 className="title">
+              {data.heroTitle}
+            </h1>
+          </div>
           <div id="hero-text">
             {data.heroText}
           </div>

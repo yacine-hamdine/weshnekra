@@ -114,8 +114,10 @@ nav{
   display: none;
 }
 
-#logo{
+#logo img{
   user-select: none;
+  width: 90%;
+  max-width: 180px;
 }
 
 #lang{
@@ -202,6 +204,10 @@ footer #credits, footer #infos{
       gap: 0;
       padding: 0;
       text-align: center;
+  }
+
+  .title{
+    line-height: 1.1;
   }
 
   #hamburger{

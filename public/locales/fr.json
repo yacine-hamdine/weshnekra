@@ -48,5 +48,12 @@
     "ecnBsnName": "Économie et Gestion",
     "ecnBsnDescription": "Économie, Finance, Gestion et Marketing.",
     "sprSciName": "Sciences du Sport",
-    "sprSciDescription": "Éducation Physique, Management du Sport et Coaching."
+    "sprSciDescription": "Éducation Physique, Management du Sport et Coaching.",
+
+    "howResultsAreCalculated": "Comment les résultats sont-ils calculés ?",
+    "resultsCalculation": "Chaque question est associée à une catégorie/spécialité et à un score. Le résultat final est la somme des scores des questions dans chaque catégorie/spécialité.",
+    "howToInterpretResults": "Comment interpréter les résultats ?",
+    "resultsInterpretation": "Les résultats sont affichés sous forme de graphique à barres. La hauteur de chaque barre représente le score de la catégorie/spécialité. Plus la barre est haute, plus cette catégorie/spécialité correspond à votre profil et à vos intérêts.",
+    "howToUseResults": "Comment utiliser les résultats ?",
+    "resultsUsage": "Nous vous recommandons de prendre en compte les premières catégories/spécialités de vos résultats et de mener des recherches approfondies sur celles-ci ainsi que sur leurs opportunités professionnelles, aussi bien localement qu’à l’international."
 }

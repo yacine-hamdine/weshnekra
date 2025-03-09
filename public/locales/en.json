@@ -48,6 +48,12 @@
     "ecnBsnName": "Economics & Management",
     "ecnBsnDescription": "Economics, Finance, Management and Marketing.",
     "sprSciName": "Sport Sciences",
-    "sprSciDescription": "Physical Education, Sports Management and Coaching."
+    "sprSciDescription": "Physical Education, Sports Management and Coaching.",
 
+    "howResultsAreCalculated": "How Results Are Calculated ?",
+    "resultsCalculation": "Each question is associated with a category/speciality and a score. The final result is the sum of the scores of the questions in each category/speciality.",
+    "howToInterpretResults": "How To Interpret The Results ?",
+    "resultsInterpretation": "The results are displayed in a bar chart. The height of each bar represents the score of the category/speciality. The higher the bar, the more this category/speciality fits your profile and interests.",
+    "howToUseResults": "How To Use The Results ?",
+    "resultsUsage": "We recommend you to take the firsts categories/specialities from your results, and conduct further research about them and their professional opportunities both locally and worldwide."
 }

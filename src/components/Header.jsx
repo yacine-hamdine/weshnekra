@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { LanguageContext } from "../contexts/language"; // Import the context
-import { Link } from "react-router-dom";
 import Menu from "../styles/menu.jsx";
+import Logo from "../assets/logos/logo.svg"
 
 
 function Header() {
@@ -16,7 +16,7 @@ function Header() {
                 </svg>
             </div>
             <div id="logo" className="subtitle">
-                WeshNekra
+                <img src={Logo} alt="Logo" />
             </div>
             <Menu />
             <div id="lang">

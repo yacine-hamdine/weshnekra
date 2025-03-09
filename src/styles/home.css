@@ -1,15 +1,29 @@
 #hero{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-around;
-    align-items: start;
+    align-items: center;
     gap: 50px;
 }
 
 #hero > div{	
     flex: 1;
 }   
+
+#hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100% !important;
+}
+
+#hero-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 #hero-text{
     display: flex;
@@ -37,6 +51,7 @@
     align-items: center;
     gap: 20px;
     min-height: 100%;
+    text-align: left;
 }
 
 #explore{
@@ -94,6 +109,10 @@
     #cta-btns{
         flex-direction: column;
     }
+
+    #explore{
+        margin-top: 50px;
+    }
 }
   
 @media screen and (min-width: 50px) and (max-width: 767px){
@@ -107,10 +126,15 @@
 
     #hero-content{
         gap: 30px;
+        text-align: center;
     }
 
     #cta-btns{
         flex-direction: column;
+    }
+
+    #explore{
+        margin-top: 30px;
     }
 
     #explore-cards{
