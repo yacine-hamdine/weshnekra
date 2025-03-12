@@ -175,46 +175,6 @@ footer #credits, footer #infos{
   flex: 1;
 }
 
-/*************************** Quiz Specefic Base Styles *******************************/
-
-.ctrl-btn{
-  background-color: red;
-}
-
-.input-slider{
-  -webkit-appearance: none;
-  appearance: none;
-  background: rgb(235, 235, 235);
-  height: 5px;
-  width: 100%;
-  max-width: 300px;
-  padding: 0;
-}
-
-.input-slider::-webkit-slider-thumb{
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 50px;
-  cursor: drag;
-}
-
-.input-slider::-webkit-slider-thumb{
-  -webkit-appearance: none;
-  appearance: none;
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border: 1px solid black;
-  border-radius: 50px;
-  cursor: drag;
-}
-
-/*************************** ------------------------- *******************************/
-
 @media screen and (min-width: 767px) and (max-width: 991px){
   /* Tablet */
 

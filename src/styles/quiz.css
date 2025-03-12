@@ -121,6 +121,137 @@
     border-radius: 10px;
 }
 
+.ctrl-btn{
+    background-color: red;
+}
+  
+.input-slider{
+    -webkit-appearance: none;
+    appearance: none;
+    background: #ebebeb;
+    height: 5px;
+    width: 100%;
+    max-width: 500px;
+    padding: 0;
+}
+  
+.input-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: grab;
+}
+  
+.input-slider::-moz-slider-thumb{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: grab;
+}
+  
+progress{
+    appearance: none;
+    -webkit-appearance: none;
+    height: 10px;
+    width: 100%;
+}
+  
+progress::-webkit-progress-bar{
+    background-color: #ebebeb;
+    border-radius: 50px;
+}
+  
+progress::-webkit-progress-value{
+    background-color: black;
+    border-radius: 50px;
+}
+
+.quiz-progress{
+    margin-bottom: 30px;
+}
+
+.quiz-progress-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quiz-card-question{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-value-box{
+    padding: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-value-content{
+    font-size: 1.5rem;
+}
+
+.quiz-card-question-input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-card-question-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.quiz-card-question-data-min-text{
+    font-size: .7rem;
+}
+
+.quiz-card-question{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.quiz-controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.quiz-widget{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
 @media screen and (min-width: 767px) and (max-width: 991px){
   
     /* Tablet */

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLanguage } from "../contexts/language"; // Import the context
 import Loading from "../components/Loading";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import useQuizLogic from "../hooks/useQuizLogic";
 import QuestionCard from "../components/QuestionCard";
 import PreviousIcon from "../assets/icons/previous.svg";
@@ -15,6 +16,8 @@ const StartQuiz = () => {
     const data = translations;
 
     const [questions, responses, scores, currentIndex, handleSliderChange, setCurrentIndex] = useQuizLogic("categorized");
+
+    const colors = ["#ff0000", "#ff5500", "#ffaa00", "#cbcb00", "#88d100", "#00ff00"]
 
     if (loading) return <Loading />;
 
@@ -33,6 +36,12 @@ const StartQuiz = () => {
                     <span>{currentIndex + 1}</span>/<span>{questions.length}</span>
                 </div>
             </div>
+            {/* <motion.div
+              className="progress-bar"
+              initial={{ width: "0%" }}
+              animate={{ width: `${(currentIndex + 1) * 100 / questions.lengh}%` }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            /> */}
             <progress value={currentIndex + 1} max={questions.length} className="quiz-progress-bar"></progress>
         </div>
 
@@ -46,8 +55,10 @@ const StartQuiz = () => {
                     {questions[currentIndex][language]}
                 </div>
                 <div className="quiz-card-question-value">
-                    <span id="input-value">
-                        {responses[questions[currentIndex].id] || 0}
+                    <span className="input-value-box" style={{ backgroundColor: `${colors[responses[questions[currentIndex].id] || 0]}35` }}>
+                        <b className="input-value-content" style={{ color: `${colors[responses[questions[currentIndex].id] || 0]}` }}>
+                          {responses[questions[currentIndex].id] || 0}
+                        </b>
                     </span>
                 </div>
                 <div className="quiz-card-question-input">
@@ -64,12 +75,14 @@ const StartQuiz = () => {
                 </div>
                 <div className="quiz-card-question-data text">
                     <div className="quiz-card-question-data-min">
-                        <span>0</span>
-                        <span>{data.disagree}</span>
+                        <span className="quiz-card-question-data-min-num" style={{ color: colors[0] }}>0</span>
+                        <br />
+                        <span className="quiz-card-question-data-min-text">{data.disagree}</span>
                     </div>
                     <div className="quiz-card-question-data-min">
-                        <span>5</span>
-                        <span>{data.agree}</span>
+                        <span className="quiz-card-question-data-min-num" style={{ color: colors[5] }}>5</span>
+                        <br />
+                        <span className="quiz-card-question-data-min-text">{data.agree}</span>
                     </div>
                 </div>
               </div>

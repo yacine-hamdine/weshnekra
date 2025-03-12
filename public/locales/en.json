@@ -61,6 +61,7 @@
     "quizRestart": "Restart Quiz",
     "quizNext": "Next",
     "quizPrevious": "Previous",
-    
+    "disagree": "Completely Disagree",
+    "agree": "Completely Agree",
     "finishQuiz": "Finish"
 }
