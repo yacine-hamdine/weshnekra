@@ -203,6 +203,10 @@ footer #credits, footer #infos{
 
   /* Mobile */
 
+  :root{
+    --ttls-fs: 2.5rem;
+  }
+
   body{
       padding-top: 50px;
   }

@@ -1,0 +1,502 @@
+[
+    {
+      "Q": "أحب حل المشكلات المعقدة.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أفضل العمل في فريق وأن أكون في حركة.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Plus",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Neutre",
+      "Éducation Physique & Sport": "Plus",
+      "Architecture": "Moins"
+    },
+    {
+      "Q": "أقرأ الروايات أو أحب الكتابة.",
+      "Science Exactes": "Neutre",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أريد أن أفهم جسم الإنسان وأساعد الآخرين.",
+      "Science Exactes": "Neutre",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Plus",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Moins"
+    },
+    {
+      "Q": "أرسم أو أبتكر تصاميم في وقت فراغي.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Moins",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Plus"
+    },
+    {
+      "Q": "بيئة منظمة بقواعد واضحة تلهمني.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Plus",
+      "Langues & Littérature": "Neutre",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Plus"
+    },
+    {
+      "Q": "أشارك في مناقشات حول السياسة أو المجتمع.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "الرياضات المتطرفة أو التحديات البدنية تثير شغفي.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Plus",
+      "Architecture": "Moins"
+    },
+    {
+      "Q": "أحلم بإنشاء شركتي الخاصة.",
+      "Science Exactes": "Neutre",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Moins",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "تعلم لغة جديدة أكثر تحفيزًا من الرياضيات.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Neutre",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أنا مهتم(ة) بالظواهر الاجتماعية (عدم المساواة، الثقافة).",
+      "Science Exactes": "Neutre",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Neutre",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أفضل الأعمال اليدوية (الأشغال اليدوية، التجارب في المختبر).",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Plus",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Plus"
+    },
+    {
+      "Q": "أريد العمل في الخارج أو مع ثقافات مختلفة.",
+      "Science Exactes": "Neutre",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "المواضيع المجردة (الفلسفة، علم النفس) تثير إعجابي.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أنا مفتون بالتقنيات الحديثة.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أريد تدريب الرياضيين أو تعليم الرياضة.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Plus",
+      "Architecture": "Moins"
+    },
+    {
+      "Q": "تنظيم الفعاليات أو المشاريع هو أمر طبيعي بالنسبة لي.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Moins",
+      "Langues & Littérature": "Neutre",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أفضل تحليل البيانات بدلاً من النصوص الأدبية.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أنا حساس لجماليات المباني أو المناظر الطبيعية.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Moins",
+      "Langues & Littérature": "Neutre",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Plus"
+    },
+    {
+      "Q": "أريد دراسة السلوكيات البشرية (علم النفس، علم الاجتماع).",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Neutre",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "المنافسات الرياضية تحفزني.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Plus",
+      "Architecture": "Moins"
+    },
+    {
+      "Q": "أفضل ألعاب الاستراتيجية (الشطرنج، ألعاب الفيديو).",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أريد العمل في المجال الإنساني أو التعليم.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أنا مهتم(ة) بالمالية أو إدارة الأعمال.",
+      "Science Exactes": "Neutre",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Moins",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أفضل الأنشطة الإبداعية (الرسم، الموسيقى) على العلوم.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Moins",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Plus"
+    },
+    {
+      "Q": "أنا فضولي(ة) بشأن الابتكارات الطبية.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Plus",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "السفر والاكتشافات الثقافية ضرورية بالنسبة لي.",
+      "Science Exactes": "Neutre",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Neutre",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أفضل الدروس النظرية على الأعمال العملية.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Moins"
+    },
+    {
+      "Q": "أريد تصميم البرمجيات أو الأنظمة المعقدة.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أنا مرتاح للتحدث أمام الجمهور.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أفضل المهن في الهواء الطلق بدلاً من المكتب.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Plus",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أحب فهم الآليات الاقتصادية (الأسواق، التضخم).",
+      "Science Exactes": "Neutre",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Moins",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أنا مهتم(ة) بالمهن المتعلقة بالموضة أو التصميم.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Moins",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Neutre",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Plus"
+    },
+    {
+      "Q": "أريد دراسة النظم البيئية أو البيئة.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أفضل المهام المتكررة والدقيقة.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Neutre",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أنا مهتم بالتاريخ أو علم الآثار.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أريد تطوير تطبيقات الهواتف المحمولة أو المواقع الإلكترونية.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أفضل المهن المتعلقة بالطبيعة (الزراعة، علم الحيوان).",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أنا شغوف بالطهي أو التغذية.",
+      "Science Exactes": "Neutre",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Plus",
+      "Langues & Littérature": "Neutre",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أريد أن أعلم أو أنقل المعرفة.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "الألغاز أو الألغاز المنطقية تسليني.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أنا منجذب(ة) إلى المهن الفنية (المسرح، السينما).",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أريد العمل في التسويق أو الاتصال.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أفضل العلوم التجريبية (الكيمياء، البيولوجيا).",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Plus",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أنا مهتم بالتخطيط الحضري أو تنظيم الأراضي.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Neutre",
+      "Sciences Économiques & de Gestion": "Neutre",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Plus"
+    },
+    {
+      "Q": "أريد القيام بأبحاث في المختبر.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Plus",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Moins",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "التحديات الفكرية تمللني، أفضل العمل الفعلي.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Moins",
+      "Santé": "Moins",
+      "Langues & Littérature": "Moins",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Plus",
+      "Architecture": "Moins"
+    },
+    {
+      "Q": "أنا مهتم(ة) بعلم النفس السريري أو العلاج النفسي.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Plus",
+      "Langues & Littérature": "Neutre",
+      "Sciences Économiques & de Gestion": "Moins",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أفضل المهن التي أستطيع فيها السفر بشكل متكرر.",
+      "Science Exactes": "Moins",
+      "Sciences Humaines & Sociales": "Plus",
+      "Santé": "Neutre",
+      "Langues & Littérature": "Plus",
+      "Sciences Économiques & de Gestion": "Plus",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Neutre"
+    },
+    {
+      "Q": "أريد تصميم منازل أو معالم مبتكرة.",
+      "Science Exactes": "Plus",
+      "Sciences Humaines & Sociales": "Neutre",
+      "Santé": "Moins",
+      "Langues & Littérature": "Neutre",
+      "Sciences Économiques & de Gestion": "Neutre",
+      "Éducation Physique & Sport": "Neutre",
+      "Architecture": "Plus"
+    }
+  ]

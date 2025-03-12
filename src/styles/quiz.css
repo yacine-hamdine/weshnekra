@@ -120,10 +120,6 @@
     height: auto;
     border-radius: 10px;
 }
-
-.ctrl-btn{
-    background-color: red;
-}
   
 .input-slider{
     -webkit-appearance: none;
@@ -174,6 +170,8 @@ progress::-webkit-progress-value{
 
 .quiz-progress{
     margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .quiz-progress-content{
@@ -235,21 +233,73 @@ progress::-webkit-progress-value{
     align-items: center;
 }
 
-.quiz-controls{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
 .quiz-widget{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     width: 100%;
+    max-width: 800px;
+}
+
+.quiz-content{
+    width: 100%;
+}
+
+.quiz-controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.main-ctrl{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+}
+
+.secondary-ctrl{
+    border: 2px solid #000;
+    color: #000;
+    background: none;
+    padding: 8px 28px;
+}
+
+.arbitrary-ctrl{
+    border: 2px solid #adadad;
+    color: #adadad;
+    background: none;
+    padding: 8px 28px;
+}
+.arbitrary-ctrl span{
+    color: #adadad;
+}
+
+.ctrl-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+.ctrl-btn-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctrl-btn-icon img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width: 767px) and (max-width: 991px){
@@ -302,5 +352,38 @@ progress::-webkit-progress-value{
     #quiz-select-options .quiz-select-option{
         flex: 1;
         gap: 5px;
+    }
+
+    .quiz-progress{
+        margin-bottom: 10px;
+    }
+
+    .quiz-card-question{
+        gap: 20px;
+    }
+
+    .quiz-widget{
+        gap: 30px;
+    }
+
+    .main-ctrl{
+        padding: 10px 10px;
+    }
+    
+    .secondary-ctrl{
+        padding: 8px 8px;
+    }
+
+    .arbitrary-ctrl{
+        padding: 8px 8px;
+    }
+
+    .ctrl-btn-icon{
+        width: 25px;
+        height: 25px;
+    }
+
+    .ctrl-btn-text{
+        display: none;
     }
 }

@@ -4,7 +4,6 @@ import Loading from "../components/Loading";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import useQuizLogic from "../hooks/useQuizLogic";
-import QuestionCard from "../components/QuestionCard";
 import PreviousIcon from "../assets/icons/previous.svg";
 import NextIcon from "../assets/icons/next.svg";
 import RestartIcon from "../assets/icons/restart.svg";
@@ -15,7 +14,7 @@ const StartQuiz = () => {
     const { language, translations, loading } = useLanguage();
     const data = translations;
 
-    const [questions, responses, scores, currentIndex, handleSliderChange, setCurrentIndex] = useQuizLogic("categorized");
+    const [questions, responses, scores, currentIndex, handleSliderChange, setCurrentIndex, categories, setScores, setResponses] = useQuizLogic("categorized");
 
     const colors = ["#ff0000", "#ff5500", "#ffaa00", "#cbcb00", "#88d100", "#00ff00"]
 
@@ -104,27 +103,31 @@ const StartQuiz = () => {
 
           <div className="quiz-controls">
           <div className="quiz-previous">
-              <button className="secondary-btn ctrl-btn-pre"
+              <button className="secondary-ctrl ctrl-btn"
                 disabled={currentIndex === 0}
                 onClick={() => setCurrentIndex((prev) => prev - 1)}
                 >
-                <span className="ctrl-btn-pre-icon">
+                <span className="ctrl-btn-icon">
                   <img src={PreviousIcon} alt="previous" />
                 </span>
-                <span className="ctrl-btn-pre-text">
+                <span className="ctrl-btn-text">
                   {data.quizPrevious}
                 </span>
               </button>
             </div>
             <div className="quiz-restart">
-              <button className="secondary-btn ctrl-btn-pre"
+              <button className="arbitrary-ctrl ctrl-btn"
                 disabled={currentIndex === 0}
-                onClick={() => setCurrentIndex(0)}
+                onClick={() => {
+                  setCurrentIndex(0);
+                  setResponses({});
+                  setScores(categories.reduce((acc, cat) => ({ ...acc, [cat]: 0 }), {}) );
+                }}
                 >
-                <span className="ctrl-btn-res-icon">
+                <span className="ctrl-btn-icon">
                   <img src={RestartIcon} alt="restart" />
                 </span>
-                <span className="ctrl-btn-res-text">
+                <span className="ctrl-btn-text">
                   {data.quizRestart}
                 </span>
               </button>
@@ -136,14 +139,14 @@ const StartQuiz = () => {
                 :
                  (
                   <div className="quiz-next">
-                    <button className="main-btn ctrl-btn-pre"
+                    <button className="main-ctrl ctrl-btn"
                       disabled={currentIndex === questions.length - 1}
                       onClick={() => setCurrentIndex((prev) => prev + 1)}
                       >
-                      <span className="ctrl-btn-nex-text" style={{ color: "white" }}>
+                      <span className="ctrl-btn-text" style={{ color: "white" }}>
                         {data.quizNext}
                       </span>
-                      <span className="ctrl-btn-nex-icon">
+                      <span className="ctrl-btn-icon">
                         <img src={NextIcon} alt="next" />
                       </span>
                     </button>

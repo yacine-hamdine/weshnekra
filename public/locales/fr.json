@@ -55,5 +55,14 @@
     "howToInterpretResults": "Comment interpréter les résultats ?",
     "resultsInterpretation": "Les résultats sont affichés sous forme de graphique à barres. La hauteur de chaque barre représente le score de la catégorie/spécialité. Plus la barre est haute, plus cette catégorie/spécialité correspond à votre profil et à vos intérêts.",
     "howToUseResults": "Comment utiliser les résultats ?",
-    "resultsUsage": "Nous vous recommandons de prendre en compte les premières catégories/spécialités de vos résultats et de mener des recherches approfondies sur celles-ci ainsi que sur leurs opportunités professionnelles, aussi bien localement qu’à l’international."
+    "resultsUsage": "Nous vous recommandons de prendre en compte les premières catégories/spécialités de vos résultats et de mener des recherches approfondies sur celles-ci ainsi que sur leurs opportunités professionnelles, aussi bien localement qu’à l’international.",
+
+    "progress": "Progression",
+    "quizRestart": "Recommencer",
+    "quizNext": "Suivant",
+    "quizPrevious": "Précédent",
+    "disagree": "Pas du tout d'accord",
+    "agree": "Tout à fait d'accord",
+    "finishQuiz": "Terminer"
+
 }
