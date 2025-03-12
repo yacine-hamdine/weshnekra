@@ -134,6 +134,10 @@
         gap: 15px;
     }
 
+    #quiz-select-options .quiz-select-option{
+        gap: 10px;
+    }
+
 }
 
 @media screen and (min-width: 50px) and (max-width: 767px){

@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from "react";
-import { LanguageContext } from "../contexts/language"; // Import the context
+import { useLanguage } from "../contexts/language"; // Import the context
+import Loading from "../components/Loading";
 import "../styles/results.css";
 import CalculationIcon from "../assets/icons/calculation.svg";
 import InterpretationIcon from "../assets/icons/chart.svg";
@@ -9,8 +10,10 @@ import UsageIcon from "../assets/icons/research.svg";
 
 const Results = ({ quizType }) => {
 
-  const { translations } = useContext(LanguageContext);
+  const { translations, loading } = useLanguage();
   const data = translations;
+
+  if (loading) return <Loading />;
 
   // const [results, setResults] = useState(null);
 
@@ -26,10 +29,10 @@ const Results = ({ quizType }) => {
 
   return (
     <>
-      <div id="results-header">
+      <section id="results-header">
         <h1 className="title">{data.results}</h1>
-      </div>
-      <div id="results-display">
+      </section>
+      <section id="results-display">
         {/* <Bar
           data={{
             labels: Object.keys(results),
@@ -42,8 +45,8 @@ const Results = ({ quizType }) => {
           }}
         />
         <h3>Recommended Path: {Object.keys(results).reduce((a, b) => results[a] > results[b] ? a : b)}</h3> */}
-      </div>
-      <div id="results-infos">
+      </section>
+      <section id="results-infos">
           <div className="results-info">
             <div className="results-info-image">
               <img src={CalculationIcon} alt="Icon" />
@@ -83,7 +86,7 @@ const Results = ({ quizType }) => {
               </p>
             </div>
           </div>
-      </div>
+      </section>
     </>
   );
 };

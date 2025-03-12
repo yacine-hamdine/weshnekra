@@ -1,11 +1,10 @@
-import React, { useContext, useEffect } from "react";
-import { LanguageContext } from "../contexts/language"; // Import the context
-import { Link } from "react-router-dom"
+import React, { useEffect } from "react";
+import { useLanguage } from "../contexts/language"; // Import the context
+import { Link } from "react-router-dom";
 
 function Menu() {
-
-  const { language, loadLanguage, translations } = useContext(LanguageContext);
-  const data = translations;
+  const { translations } = useLanguage();
+  const data = translations; // Keep reference for clarity
 
   useEffect(() => {
     const menu = document.getElementById("menu");
@@ -58,25 +57,25 @@ function Menu() {
       btn.removeEventListener("click", toggleMenu);
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, []); // ✅ useEffect is always called in the same order
 
   return (
     <nav id="menu">
-        <Link to="/">
-            <span className="text link">
-                {data.home}
-            </span>
-        </Link>
-        <Link to="/quiz">
-            <span className="text link">
-                {data.quiz}
-            </span>
-        </Link>
-        <Link to="/results">
-            <span className="text link">
-                {data.results}
-            </span>
-        </Link>
+      <Link to="/">
+        <span className="text link">
+          {data?.home}
+        </span>
+      </Link>
+      <Link to="/quiz">
+        <span className="text link">
+          {data?.quiz}
+        </span>
+      </Link>
+      <Link to="/results">
+        <span className="text link">
+          {data?.results}
+        </span>
+      </Link>
     </nav>
   );
 }

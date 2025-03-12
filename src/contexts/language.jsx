@@ -1,36 +1,46 @@
-import React, { createContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
-// Create the context
-export const LanguageContext = createContext();
+// Create Language Context
+const LanguageContext = createContext();
 
-// Create a provider component
-export const LanguageProvider = ({ children }) => {
-  const [translations, setTranslations] = useState({});
-  const [language, setLanguage] = useState(localStorage.getItem("language") || "en");
+// Language Provider Component
+export function LanguageProvider({ children }) {
+  // Load language from localStorage or default to "en"
+  const [language, setLanguage] = useState(() => {
+    return localStorage.getItem("language") || "en";
+  });
 
-  // Function to load language data
-  const loadLanguage = async (lang) => {
-    try {
-      const response = await fetch(`/locales/${lang}.json`);
-      if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-      
-      const data = await response.json();
-      setTranslations(data);
-      setLanguage(lang);
-      localStorage.setItem("language", lang);
-    } catch (error) {
-      console.error("Error loading language file:", error);
-    }
-  };
+  const [translations, setTranslations] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  // Load the saved language on mount
+  // Fetch translations when the language changes
   useEffect(() => {
-    loadLanguage(language);
-  }, []);
+    setLoading(true);
+    fetch(`/locales/${language}.json`)
+      .then((res) => res.json())
+      .then((data) => {
+        setTranslations(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error loading language file:", err);
+        setLoading(false);
+      });
+  }, [language]);
+
+  // Save the selected language to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem("language", language);
+  }, [language]);
 
   return (
-    <LanguageContext.Provider value={{ language, translations, loadLanguage }}>
+    <LanguageContext.Provider value={{ translations, language, setLanguage, loading }}>
       {children}
     </LanguageContext.Provider>
   );
-};
+}
+
+// Custom Hook for easier usage
+export function useLanguage() {
+  return useContext(LanguageContext);
+}

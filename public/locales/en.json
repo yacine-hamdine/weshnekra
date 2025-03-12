@@ -14,7 +14,7 @@
     "copyright": "All rights reserved",
 
     "heroTitle": "Determine Your Acedemic Path With Ease",
-    "heroText": "Welcome to our platform dedicated for Algerian students ! We help you explore your passions and choose the field that fits you the best.",
+    "heroText": "Welcome to our platform dedicated for future college students ! We help you explore your passions and choose the field that fits you the best.",
     "startQuiz": "Start",
     "specialQuiz": "Specialized Test",
 
@@ -55,5 +55,12 @@
     "howToInterpretResults": "How To Interpret The Results ?",
     "resultsInterpretation": "The results are displayed in a bar chart. The height of each bar represents the score of the category/speciality. The higher the bar, the more this category/speciality fits your profile and interests.",
     "howToUseResults": "How To Use The Results ?",
-    "resultsUsage": "We recommend you to take the firsts categories/specialities from your results, and conduct further research about them and their professional opportunities both locally and worldwide."
+    "resultsUsage": "We recommend you to take the firsts categories/specialities from your results, and conduct further research about them and their professional opportunities both locally and worldwide.",
+
+    "progress": "Progress",
+    "quizRestart": "Restart Quiz",
+    "quizNext": "Next",
+    "quizPrevious": "Previous",
+    
+    "finishQuiz": "Finish"
 }

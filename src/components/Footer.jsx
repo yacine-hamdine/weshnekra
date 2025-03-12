@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
-import { LanguageContext } from "../contexts/language"; // Import the context
-import { Link } from "react-router-dom";
-
+import React from "react";
+import { useLanguage } from "../contexts/language"; // Import the context
 function Footer() {
 
-    const { language, loadLanguage, translations } = useContext(LanguageContext);
+    const { translations, loading } = useLanguage();
     const data = translations;
+
+    if (loading) return <p>&nbsp;</p>;
 
     return (
        <footer>

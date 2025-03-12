@@ -6,17 +6,20 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "firebase deploy --only hosting",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "firebase": "^11.4.0",
+    "framer-motion": "^12.5.0",
     "idb": "^8.0.2",
     "npm": "^10.9.2",
     "react": "^19.0.0",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.0.0",
-    "react-router-dom": "^7.2.0"
+    "react-router-dom": "^7.2.0",
+    "react-spinners": "^0.15.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

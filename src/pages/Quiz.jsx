@@ -1,5 +1,6 @@
-import React, { useContext } from "react";
-import { LanguageContext } from "../contexts/language"; // Import the context
+import React from "react";
+import { useLanguage } from "../contexts/language"; // Import the context
+import Loading from "../components/Loading";
 import { Link } from "react-router-dom";
 import "../styles/quiz.css";
 import GenCatIcon from "../assets/icons/gen-cat.svg";
@@ -11,19 +12,20 @@ import SprSciIcon from "../assets/icons/spr-sci.svg";
 import LngLitIcon from "../assets/icons/lng-lit.svg";
 const Quiz = () => {
 
-  const { translations } = useContext(LanguageContext);
+  const { translations, loading } = useLanguage();
   const data = translations;
   
+  if (loading) return <Loading />;
 
   return (
     <>
       {
         // TODO: add a "Continue Quiz" component if user has already started the quiz and has not finished it
       }
-      <div id="quiz-header">
+      <section id="quiz-header">
         <h1 className="title">{data.quiz}</h1>
-      </div>
-      <div id="quiz-presentation">
+      </section>
+      <section id="quiz-presentation">
         <div id="quiz-instructions">
           <h3 className="subtitle">{data.quizInstructions}</h3>
           <ul className="text">
@@ -47,8 +49,8 @@ const Quiz = () => {
             <p className="text">{data.quizWarningText}</p>
           </div>
         </div>
-      </div>
-      <div id="quiz-select">
+      </section>
+      <section id="quiz-select">
         <div id="quiz-select-title">
           <h3 className="title">{data.quizSelect}</h3>
         </div>
@@ -180,7 +182,7 @@ const Quiz = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

@@ -31,7 +31,47 @@ const useQuizLogic = ({ quizType }) => {
 
   // Fetch questions from Firestore or IndexedDB
   useEffect(() => {
-    fetchQuestions(db, quizType).then(setQuestions);
+    // fetchQuestions(db, quizType).then(setQuestions);
+    setQuestions([
+      {
+        "id": "Q1",
+        "en": "I enjoy solving complex problems.",
+        "fr": "J’aime résoudre des problèmes complexes.",
+        "ar": "أحب حل المشكلات المعقدة",
+        "weights": {
+          "ecn-bsn": 1,
+          "lng-lit": -1,
+          "spr-sci": -1,
+          "xct-sci": 1
+        }
+      },
+      {
+        "id": "Q2",
+        "en": "I prefer working in a team and being on the move.",
+        "fr": "Je préfère travailler en équipe et être en mouvement.",
+        "ar": "أفضل العمل في فريق وأن أكون في حركة.",
+        "weights": {
+          "arc-dsg": -1,
+          "lng-lit": -1,
+          "hmn-sci": 1,
+          "lth-sci": 1,
+          "spr-sci": 1,
+          "xct-sci": -1
+        }
+      },
+      {
+        "id": "Q3",
+        "en": "I read novels or like to write.",
+        "fr": "Je lis des romans ou aime écrire.",
+        "ar": "أقرأ الروايات أو أحب الكتابة.",
+        "weights": {
+          "ecn-bsn": -1,
+          "lng-lit": 1,
+          "hmn-sci": 1,
+          "spr-sci": -1
+        }
+      }
+    ])
   }, [quizType]);
 
   // Save quiz state whenever responses change
@@ -48,6 +88,8 @@ const useQuizLogic = ({ quizType }) => {
       [questionId]: value
     }));
 
+    console.log(value)
+
     setScores((prevScores) => {
       const newScores = { ...prevScores };
       Object.entries(weights).forEach(([category, weight]) => {
@@ -57,41 +99,7 @@ const useQuizLogic = ({ quizType }) => {
     });
   };
 
-  return (
-    <div>
-      <h2>Quiz</h2>
-      {questions.length > 0 ? (
-        <div key={questions[currentIndex].id}>
-          <p>{questions[currentIndex].en}</p>
-          <input
-            type="range"
-            min="0"
-            max="5"
-            value={responses[questions[currentIndex].id] || 0}
-            onChange={(e) => handleSliderChange(questions[currentIndex].id, Number(e.target.value), questions[currentIndex].weights)}
-          />
-        </div>
-      ) : (
-        <p>Loading questions...</p>
-      )}
-
-      {/* Navigation */}
-      <button
-        disabled={currentIndex === 0}
-        onClick={() => setCurrentIndex((prev) => prev - 1)}
-      >
-        Previous
-      </button>
-      <button
-        disabled={currentIndex === questions.length - 1}
-        onClick={() => setCurrentIndex((prev) => prev + 1)}
-      >
-        Next
-      </button>
-
-      <button onClick={() => console.log("Final Scores:", scores)}>See Results</button>
-    </div>
-  );
+  return [questions, responses, scores, currentIndex, handleSliderChange, setCurrentIndex];
 };
 
 export default useQuizLogic;

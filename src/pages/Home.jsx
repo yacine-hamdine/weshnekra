@@ -1,5 +1,6 @@
-import React, { useContext } from "react";
-import { LanguageContext } from "../contexts/language"; // Import the context
+import React from "react";
+import { useLanguage } from "../contexts/language"; // Import the context
+import Loading from "../components/Loading";
 import { Link } from "react-router-dom";
 import "../styles/home.css";
 import HeroImg from "../assets/images/hero.svg";
@@ -9,12 +10,14 @@ import EducationIcon from "../assets/icons/educ.svg";
 
 const Home = () => {
 
-  const { translations } = useContext(LanguageContext);
+  const { translations, loading } = useLanguage();
   const data = translations;
+
+  if (loading) return <Loading />;
 
   return (
     <>
-      <div id="hero">
+      <section id="hero">
         <div id="hero-image">
           <img src={HeroImg} alt="Hero Image" />
         </div>
@@ -40,8 +43,8 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </div>
-      <div id="explore">
+      </section>
+      <section id="explore">
         <div id="explore-title">
           <h2 className="title">
             {data.exploreTitle}
@@ -111,7 +114,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }
