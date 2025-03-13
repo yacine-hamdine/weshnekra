@@ -14,7 +14,7 @@ const StartQuiz = () => {
     const { language, translations, loading } = useLanguage();
     const data = translations;
 
-    const [questions, responses, scores, currentIndex, handleSliderChange, setCurrentIndex, categories, setScores, setResponses] = useQuizLogic("categorized");
+    const [questions, responses, rawScores, normalizedScores, currentIndex, handleSliderChange, setCurrentIndex, categories, setRawScores, setResponses] = useQuizLogic("categorized");
 
     const colors = ["#ff0000", "#ff5500", "#ffaa00", "#cbcb00", "#88d100", "#00ff00"]
 
@@ -121,7 +121,7 @@ const StartQuiz = () => {
                 onClick={() => {
                   setCurrentIndex(0);
                   setResponses({});
-                  setScores(categories.reduce((acc, cat) => ({ ...acc, [cat]: 0 }), {}) );
+                  setRawScores(categories.reduce((acc, cat) => ({ ...acc, [cat]: 0 }), {}) );
                 }}
                 >
                 <span className="ctrl-btn-icon">
@@ -134,7 +134,10 @@ const StartQuiz = () => {
             </div>
             { currentIndex === questions.length - 1 ? 
                 (
-                  <button onClick={() => console.log("Final Scores:", scores)} className="main-btn">{data.finishQuiz}</button>
+                  <button onClick={() => {
+                    console.log(`Final RawScores: `, rawScores, `Final NormalizedScores: `, normalizedScores);
+                    alert(`Recommended Categories :\n ${Array.from(Object.keys(normalizedScores).sort((a, b) => normalizedScores[b] - normalizedScores[a])).join("\n")}`);
+                  }} className="main-btn">{data.finishQuiz}</button>
                 )
                 :
                  (

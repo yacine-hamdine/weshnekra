@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { fetchQuestions } from "../providers/QuizLoader"; // Fetch questions from Firestore or IndexedDB
 import { db } from "../config/firebase"; // Firestore config
 
-
 const useQuizLogic = (quizType) => {
   const categories = [
     "xct-sci",
@@ -18,7 +17,8 @@ const useQuizLogic = (quizType) => {
   const savedState = JSON.parse(localStorage.getItem(`quiz_state_${quizType}`)) || {};
 
   const [responses, setResponses] = useState(savedState.savedResponses || {});
-  const [scores, setScores] = useState(savedState.savedScores || categories.reduce((acc, cat) => ({ ...acc, [cat]: 0 }), {}));
+  const [rawScores, setRawScores] = useState(savedState.savedScores || categories.reduce((acc, cat) => ({ ...acc, [cat]: 0 }), {}));
+  const [normalizedScores, setNormalizedScores] = useState({});
   const [currentIndex, setCurrentIndex] = useState(savedState.savedIndex || 0);
   const [questions, setQuestions] = useState([]);
 
@@ -37,9 +37,33 @@ const useQuizLogic = (quizType) => {
   useEffect(() => {
     localStorage.setItem(
       `quiz_state_${quizType}`,
-      JSON.stringify({ savedResponses: responses, savedScores: scores, savedIndex: currentIndex })
+      JSON.stringify({ savedResponses: responses, savedScores: rawScores, savedIndex: currentIndex })
     );
-  }, [responses, scores, currentIndex, quizType]);
+  }, [responses, rawScores, currentIndex, quizType]);
+
+  // Function to normalize scores
+  const normalizeScores = (scores) => {
+    const values = Object.values(scores);
+    const minScore = Math.min(...values);
+    const maxScore = Math.max(...values);
+
+    if (maxScore === minScore) {
+      // Avoid division by zero; set all to 50 (neutral)
+      return categories.reduce((acc, cat) => ({ ...acc, [cat]: 50 }), {});
+    }
+
+    const normalized = {};
+    for (const cat of categories) {
+      normalized[cat] = ((scores[cat] - minScore) / (maxScore - minScore)) * 100;
+    }
+
+    return normalized;
+  };
+
+  // Apply normalization whenever rawScores change
+  useEffect(() => {
+    setNormalizedScores(normalizeScores(rawScores));
+  }, [rawScores]);
 
   const handleSliderChange = (questionId, value, weights) => {
     setResponses((prev) => ({
@@ -47,7 +71,9 @@ const useQuizLogic = (quizType) => {
       [questionId]: value
     }));
 
-    setScores((prevScores) => {
+    console.log(rawScores)
+
+    setRawScores((prevScores) => {
       const newScores = { ...prevScores };
       Object.entries(weights).forEach(([category, weight]) => {
         newScores[category] += value * weight;
@@ -56,7 +82,7 @@ const useQuizLogic = (quizType) => {
     });
   };
 
-  return [questions, responses, scores, currentIndex, handleSliderChange, setCurrentIndex, categories, setScores, setResponses];
+  return [questions, responses, rawScores, normalizedScores, currentIndex, handleSliderChange, setCurrentIndex, categories, setRawScores, setResponses];
 };
 
 export default useQuizLogic;
@@ -70,52 +96,29 @@ export default useQuizLogic;
 
 
 
+// import { useState, useEffect } from "react";
+// import { fetchQuestions } from "../providers/QuizLoader"; // Fetch questions from Firestore or IndexedDB
+// import { db } from "../config/firebase"; // Firestore config
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const categories = [
-//   "xct-sci",
-//   "ecn-bsn",
-//   "lng-lit",
-//   "spr-sci",
-//   "hmn-sci",
-//   "lth-sci",
-//   "arc-dsg"
-// ];
 
 // const useQuizLogic = (quizType) => {
-//   const [questions, setQuestions] = useState([]);
-//   const [responses, setResponses] = useState({});
-//   const [scores, setScores] = useState(categories.reduce((acc, cat) => ({ ...acc, [cat]: 0 }), {}));
-//   const [currentIndex, setCurrentIndex] = useState(0); // Track the current question
+//   const categories = [
+//     "xct-sci",
+//     "ecn-bsn",
+//     "lng-lit",
+//     "spr-sci",
+//     "hmn-sci",
+//     "lth-sci",
+//     "arc-dsg"
+//   ];
 
-//   // Load quiz state from LocalStorage
-//   useEffect(() => {
-//     const savedState = localStorage.getItem(`quiz_state_${quizType}`);
-//     if (savedState) {
-//       const { savedResponses, savedScores, savedIndex } = JSON.parse(savedState);
-//       setResponses(savedResponses);
-//       setScores(savedScores);
-//       setCurrentIndex(savedIndex);
-//     }
-//   }, [quizType]);
+//   // Load saved state from LocalStorage at initialization
+//   const savedState = JSON.parse(localStorage.getItem(`quiz_state_${quizType}`)) || {};
+
+//   const [responses, setResponses] = useState(savedState.savedResponses || {});
+//   const [scores, setScores] = useState(savedState.savedScores || categories.reduce((acc, cat) => ({ ...acc, [cat]: 0 }), {}));
+//   const [currentIndex, setCurrentIndex] = useState(savedState.savedIndex || 0);
+//   const [questions, setQuestions] = useState([]);
 
 //   // Fetch questions from Firestore or IndexedDB
 //   useEffect(() => {
@@ -141,8 +144,6 @@ export default useQuizLogic;
 //       ...prev,
 //       [questionId]: value
 //     }));
-
-//     console.log(scores);
 
 //     setScores((prevScores) => {
 //       const newScores = { ...prevScores };
