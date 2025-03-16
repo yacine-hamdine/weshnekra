@@ -14,8 +14,12 @@ const StartQuiz = () => {
     const { language, translations, loading } = useLanguage();
     const data = translations;
 
-    const [questions, responses, rawScores, normalizedScores, currentIndex, handleSliderChange, setCurrentIndex, categories, setRawScores, setResponses] = useQuizLogic("categorized");
+    // Quiz Logic Hook
+    const quizTypeInstance = "categorized";
+    const resultsGatesInstance = ["xct-sci", "ecn-bsn", "lng-lit", "spr-sci", "hmn-sci", "lth-sci", "arc-dsg"];
 
+    const [questions, responses, rawScores, normalizedScores, regulatedScores, hybridScores, currentIndex, handleSliderChange, setCurrentIndex, resultsGates  , setRawScores, setResponses] = useQuizLogic(quizTypeInstance, resultsGatesInstance);
+    
     const colors = ["#ff0000", "#ff5500", "#ffaa00", "#cbcb00", "#88d100", "#00ff00"]
 
     if (loading) return <Loading />;
@@ -85,16 +89,6 @@ const StartQuiz = () => {
                     </div>
                 </div>
               </div>
-              // <div key={questions[currentIndex].id}>
-              //   <h2 className="subtitle">{questions[currentIndex].en}</h2>
-              //   <input
-              //     type="range"
-              //     min="0"
-              //     max="5"
-              //     value={responses[questions[currentIndex].id] || 0}
-              //     onChange={(e) => handleSliderChange(questions[currentIndex].id, Number(e.target.value), questions[currentIndex].weights)}
-              //   />
-              // </div>
             ) : (
               <Loading />
             )}
@@ -121,7 +115,8 @@ const StartQuiz = () => {
                 onClick={() => {
                   setCurrentIndex(0);
                   setResponses({});
-                  setRawScores(categories.reduce((acc, cat) => ({ ...acc, [cat]: 0 }), {}) );
+                  setRawScores(resultsGates.reduce((acc, cat) => ({ ...acc, [cat]: 0 }), {}) );
+                  localStorage.removeItem(`quiz_state_${quizTypeInstance}`);
                 }}
                 >
                 <span className="ctrl-btn-icon">
@@ -134,10 +129,12 @@ const StartQuiz = () => {
             </div>
             { currentIndex === questions.length - 1 ? 
                 (
-                  <button onClick={() => {
-                    console.log(`Final RawScores: `, rawScores, `Final NormalizedScores: `, normalizedScores);
-                    alert(`Recommended Categories :\n ${Array.from(Object.keys(normalizedScores).sort((a, b) => normalizedScores[b] - normalizedScores[a])).join("\n")}`);
-                  }} className="main-btn">{data.finishQuiz}</button>
+                  <Link to={`/results/${quizTypeInstance}`}>
+                    <button onClick={() => {
+                      // console.log(`Final RawScores: `, rawScores, `Final NormalizedScores: `, normalizedScores, `Final RegulatedScores: `, regulatedScores, `Final HybridScores: `, hybridScores);
+                      // alert(`Recommendation 1 :\n${Array.from(Object.keys(normalizedScores).sort((a, b) => normalizedScores[b] - normalizedScores[a])).join("\n")}\nRecommendation 2 :\n${Array.from(Object.keys(regulatedScores).sort((a, b) => regulatedScores[b] - regulatedScores[a])).join("\n")}\nRecommendation 3 :\n${Array.from(Object.keys(hybridScores).sort((a, b) => hybridScores[b] - hybridScores[a])).join("\n")}`);
+                    }} className="main-btn">{data.finishQuiz}</button>
+                  </Link>
                 )
                 :
                  (

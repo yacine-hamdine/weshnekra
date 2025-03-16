@@ -16,6 +16,7 @@ const Router = createBrowserRouter([
       { path: '/quiz', element: <Quiz />}, 
       { path: '/quiz/start', element: <StartQuiz /> },
       { path: '/quiz/special/:category', element: <SpecialQuiz /> },
+      { path: '/results/:quizType', element: <Results /> },
       { path: '/results', element: <Results /> },
       { path: '*', element: <NotFoundPage /> },
     ],

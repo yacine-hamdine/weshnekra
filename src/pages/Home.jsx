@@ -31,12 +31,12 @@ const Home = () => {
             {data.heroText}
           </div>
           <div id="cta-btns">
-            <Link to={"/quiz/start"}>
+            <Link to={"/quiz"}>
               <button className="main-btn">
                 {data.startQuiz}
               </button>
             </Link>
-            <Link to={"/quiz/special"}>
+            <Link to={"/quiz"}>
               <button className="secondary-btn">
                 {data.specialQuiz}
               </button>
@@ -102,7 +102,7 @@ const Home = () => {
             </div>
           </div>
           <div id="explore-btns">
-            <Link to={"/quiz/start"}>
+            <Link to={"/quiz"}>
               <button className="secondary-btn">
                 {data.startQuiz}
               </button>
