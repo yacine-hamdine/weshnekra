@@ -56,6 +56,7 @@
     "resultsInterpretation": "The results are displayed in a bar chart. The height of each bar represents the score of the category/speciality. The higher the bar, the more this category/speciality fits your profile and interests.",
     "howToUseResults": "How To Use The Results ?",
     "resultsUsage": "We recommend you to take the firsts categories/specialities from your results, and conduct further research about them and their professional opportunities both locally and worldwide.",
+    "savedResultsTitle": "Your Saved Quiz Results",
 
     "progress": "Progress",
     "quizRestart": "Restart",

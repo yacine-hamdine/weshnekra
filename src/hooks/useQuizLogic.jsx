@@ -35,11 +35,14 @@ const useQuizLogic = (quizType, resultsGates) => {
       `quiz_state_${quizType}`,
       JSON.stringify({
         savedResponses: responses,
-        savedScores: rawScores,
+        savedRawScores: rawScores,
+        savedNormalizedScores: normalizedScores,
+        savedRegulatedScores: regulatedScores,
+        savedHybridScores: hybridScores,
         savedIndex: currentIndex
       })
     );
-  }, [responses, rawScores, currentIndex, quizType]);
+  }, [responses, hybridScores, currentIndex, quizType]);
 
   // Normalization: scale rawScores to a 0-100 range based on current min and max across categories
   const normalizeScores = (scores) => {
@@ -92,7 +95,6 @@ const useQuizLogic = (quizType, resultsGates) => {
         if (maxPossible[cat] > 0) {
           // Calculate regulated score (capped at 100)
           newRegulated[cat] = Math.min((rawScores[cat] / maxPossible[cat]) * 100, 100);
-          console.log(`Regulated score for ${cat}: ${newRegulated[cat]}`);
         } else {
           newRegulated[cat] = 0;
         }
@@ -104,7 +106,7 @@ const useQuizLogic = (quizType, resultsGates) => {
   // Compute a hybrid score as a weighted average of normalized and regulated scores.
   // alpha is a parameter (0 <= alpha <= 1). For example, alpha=0.5 gives equal weight.
   useEffect(() => {
-    const alpha = 1; // Adjust as needed
+    const alpha = 0.5; // Adjust as needed
     const newHybrid = {};
     resultsGates.forEach((cat) => {
       const norm = normalizedScores[cat] !== undefined ? normalizedScores[cat] : 0;

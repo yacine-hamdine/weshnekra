@@ -233,6 +233,13 @@ progress::-webkit-progress-value{
     align-items: center;
 }
 
+.quiz-card-question-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
 .quiz-widget{
     display: flex;
     flex-direction: column;
@@ -363,7 +370,7 @@ progress::-webkit-progress-value{
     }
 
     .quiz-widget{
-        gap: 30px;
+        gap: 60px;
     }
 
     .main-ctrl{
