@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLanguage } from "../contexts/language"; // Import the context
 import Loading from "../components/Loading";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import useQuizLogic from "../hooks/useQuizLogic";
 import PreviousIcon from "../assets/icons/previous.svg";
@@ -20,7 +20,26 @@ const StartQuiz = () => {
 
     const [questions, responses, rawScores, normalizedScores, regulatedScores, hybridScores, currentIndex, handleSliderChange, setCurrentIndex, resultsGates  , setRawScores, setResponses] = useQuizLogic(quizTypeInstance, resultsGatesInstance);
     
-    const colors = ["#ff0000", "#ff5500", "#ffaa00", "#cbcb00", "#88d100", "#00ff00"]
+    const colors = ["#ff0000", "#ff5500", "#ffaa00", "#cbcb00", "#88d100", "#00ff00"];
+
+    const navigate = useNavigate();
+
+    const handleFinishQuiz = (quizType) => {
+      localStorage.setItem(
+        `quiz_state_${quizType}`,
+        JSON.stringify({
+          savedResponses: responses,
+          savedRawScores: rawScores,
+          savedNormalizedScores: normalizedScores,
+          savedRegulatedScores: regulatedScores,
+          savedHybridScores: hybridScores,
+          savedIndex: currentIndex,
+        })
+      );
+      // Then navigate to the results page.
+      navigate(`/results/${quizType}`);
+
+    };
 
     if (loading) return <Loading />;
 
@@ -129,12 +148,9 @@ const StartQuiz = () => {
             </div>
             { currentIndex === questions.length - 1 ? 
                 (
-                  <Link to={`/results/${quizTypeInstance}`}>
-                    <button onClick={() => {
-                      // console.log(`Final RawScores: `, rawScores, `Final NormalizedScores: `, normalizedScores, `Final RegulatedScores: `, regulatedScores, `Final HybridScores: `, hybridScores);
-                      // alert(`Recommendation 1 :\n${Array.from(Object.keys(normalizedScores).sort((a, b) => normalizedScores[b] - normalizedScores[a])).join("\n")}\nRecommendation 2 :\n${Array.from(Object.keys(regulatedScores).sort((a, b) => regulatedScores[b] - regulatedScores[a])).join("\n")}\nRecommendation 3 :\n${Array.from(Object.keys(hybridScores).sort((a, b) => hybridScores[b] - hybridScores[a])).join("\n")}`);
-                    }} className="main-btn">{data.finishQuiz}</button>
-                  </Link>
+                  <button onClick={handleFinishQuiz(quizTypeInstance)} className="main-btn">
+                    {data.finishQuiz}
+                  </button>
                 )
                 :
                  (
