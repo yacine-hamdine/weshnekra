@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { useLanguage } from "../contexts/language"; // Import the context
 import Loading from "../components/Loading";
 import { Link } from "react-router-dom";
@@ -13,13 +13,23 @@ const Home = () => {
   const { translations, loading } = useLanguage();
   const data = translations;
 
+  const [heroLoaded, setHeroLoaded] = useState(false);
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = HeroImg;
+    img.onload = () => setHeroLoaded(true);
+  }, []);
+
   if (loading) return <Loading />;
 
   return (
     <>
       <section id="hero">
         <div id="hero-image">
-          <img src={HeroImg} alt="Hero Image" />
+          {
+            heroLoaded ? <img src={HeroImg} alt="Hero Image"/> : <Loading />
+          }
         </div>
         <div id="hero-content">
           <div id="hero-title">

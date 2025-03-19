@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
 import { useLanguage } from "../contexts/language"; // Import the context
 import Loading from "../components/Loading";
-import { Link, useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+import { useNavigate, useParams } from "react-router-dom";
+// import { motion } from "framer-motion";
 import useQuizLogic from "../hooks/useQuizLogic";
 import PreviousIcon from "../assets/icons/previous.svg";
 import NextIcon from "../assets/icons/next.svg";
@@ -11,34 +10,37 @@ import RestartIcon from "../assets/icons/restart.svg";
 
 const StartQuiz = () => {
 
+    const { quizType } = useParams(); // Retrieve the quizType param if provided
     const { language, translations, loading } = useLanguage();
     const data = translations;
 
     // Quiz Logic Hook
-    const quizTypeInstance = "categorized";
     const resultsGatesInstance = ["xct-sci", "ecn-bsn", "lng-lit", "spr-sci", "hmn-sci", "lth-sci", "arc-dsg"];
 
-    const [questions, responses, rawScores, normalizedScores, regulatedScores, hybridScores, currentIndex, handleSliderChange, setCurrentIndex, resultsGates  , setRawScores, setResponses] = useQuizLogic(quizTypeInstance, resultsGatesInstance);
+    const [questions, responses, rawScores, normalizedScores, regulatedScores, hybridScores, currentIndex, handleSliderChange, setCurrentIndex, resultsGates  , setRawScores, setResponses] = useQuizLogic(quizType, resultsGatesInstance);
     
     const colors = ["#ff0000", "#ff5500", "#ffaa00", "#cbcb00", "#88d100", "#00ff00"];
 
     const navigate = useNavigate();
 
-    const handleFinishQuiz = (quizType) => {
-      localStorage.setItem(
-        `quiz_state_${quizType}`,
-        JSON.stringify({
-          savedResponses: responses,
-          savedRawScores: rawScores,
-          savedNormalizedScores: normalizedScores,
-          savedRegulatedScores: regulatedScores,
-          savedHybridScores: hybridScores,
-          savedIndex: currentIndex,
-        })
-      );
-      // Then navigate to the results page.
+    const handleFinishQuiz = () => {
+      // Prepare the final state
+      const finalState = {
+        savedResponses: responses,
+        savedRawScores: rawScores,
+        savedIndex: currentIndex,
+        savedSize: questions.length,
+        savedNormalizedScores: normalizedScores,
+        savedRegulatedScores: regulatedScores,
+        savedHybridScores: hybridScores,
+        finished: true, // Mark the quiz as finished
+      };
+  
+      // Save final state in localStorage
+      localStorage.setItem(`quiz_state_${quizType}`, JSON.stringify(finalState));
+  
+      // Navigate to the results page
       navigate(`/results/${quizType}`);
-
     };
 
     if (loading) return <Loading />;
@@ -130,12 +132,11 @@ const StartQuiz = () => {
             </div>
             <div className="quiz-restart">
               <button className="arbitrary-ctrl ctrl-btn"
-                disabled={currentIndex === 0}
                 onClick={() => {
                   setCurrentIndex(0);
                   setResponses({});
                   setRawScores(resultsGates.reduce((acc, cat) => ({ ...acc, [cat]: 0 }), {}) );
-                  localStorage.removeItem(`quiz_state_${quizTypeInstance}`);
+                  localStorage.removeItem(`quiz_state_${quizType}`);
                 }}
                 >
                 <span className="ctrl-btn-icon">
@@ -148,7 +149,7 @@ const StartQuiz = () => {
             </div>
             { currentIndex === questions.length - 1 ? 
                 (
-                  <button onClick={handleFinishQuiz(quizTypeInstance)} className="main-btn">
+                  <button className="main-btn" onClick={handleFinishQuiz}>
                     {data.finishQuiz}
                   </button>
                 )

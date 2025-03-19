@@ -66,7 +66,7 @@ const Quiz = () => {
               {data.genCatDescription}
             </div>
             <div className="option-btn">
-              <Link to={"/quiz/start"}>
+              <Link to={"/quiz/gen-cat"}>
                 <button className="main-btn">
                   {data.startQuiz}
                 </button>
@@ -84,7 +84,7 @@ const Quiz = () => {
               {data.xctSciDescription}
             </div>
             <div className="option-btn">
-              <Link to={"/quiz/special/xct-sci"}>
+              <Link to={"/quiz/xct-sci"}>
                 <button className="secondary-btn">
                   {data.startQuiz}
                 </button>
@@ -102,7 +102,7 @@ const Quiz = () => {
               {data.hmnSciDescription}
             </div>
             <div className="option-btn">
-              <Link to={"/quiz/special/hmn-sci"}>
+              <Link to={"/quiz/hmn-sci"}>
                 <button className="secondary-btn">
                   {data.startQuiz}
                 </button>
@@ -138,7 +138,7 @@ const Quiz = () => {
               {data.lngLitDescription}
             </div>
             <div className="option-btn">
-              <Link to={"/quiz/special/lng-lit"}>
+              <Link to={"/quiz/lng-lit"}>
                 <button className="secondary-btn">
                   {data.startQuiz}
                 </button>
@@ -156,7 +156,7 @@ const Quiz = () => {
               {data.ecnBsnDescription}
             </div>
             <div className="option-btn">
-              <Link to={"/quiz/special/ecn-bsn"}>
+              <Link to={"/quiz/ecn-bsn"}>
                 <button className="secondary-btn">
                   {data.startQuiz}
                 </button>
@@ -174,7 +174,7 @@ const Quiz = () => {
               {data.sprSciDescription}
             </div>
             <div className="option-btn">
-              <Link to={"/quiz/special/spr-sci"}>
+              <Link to={"/quiz/spr-sci"}>
                 <button className="secondary-btn">
                   {data.startQuiz}
                 </button>

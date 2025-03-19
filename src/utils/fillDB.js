@@ -73,7 +73,7 @@
 //     }
 
 //     // Upload the merged data into Firestore
-//     await setDoc(doc(db, "quizzes", "categorized"), { questions: mergedQuestions });
+//     await setDoc(doc(db, "quizzes", "gen-cat"), { questions: mergedQuestions });
 //     console.log("Quiz questions uploaded successfully.");
 //   } catch (error) {
 //     console.error("Error during merging and uploading:", error);

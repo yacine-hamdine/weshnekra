@@ -175,6 +175,11 @@ footer #credits, footer #infos{
   flex: 1;
 }
 
+.blg{
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
 @media screen and (min-width: 767px) and (max-width: 991px){
   /* Tablet */
 

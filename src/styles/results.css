@@ -1,3 +1,11 @@
+#results-faqs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
 #results-infos{
     display: flex;
     flex-direction: row;
@@ -22,6 +30,98 @@
 
 .results-info-image img{
     min-width: 70px;
+}
+
+#selected-result{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#selected-result .result-recommendation, #selected-result .result-chart{
+    width: 100%;
+}
+
+#recommended-gates{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recommended-gate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+}
+
+.recommended-gate .gate-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.recommended-gate .gate-content .gate-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommended-gate .gate-content .gate-icon img{
+    min-width: 30px;
+}
+
+.recommended-gate .gate-action{
+    width: 100%;
+}
+
+#results-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+#results-grid .result-item{
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+#results-grid .result-item.active{
+    opacity: .5;
+}
+
+#results-grid .result-item .item-icon img{
+    min-height: 50px;
+}
+
+#results-grid .result-item > div{
+    width: 100%;
 }
 
 @media screen and (min-width: 767px) and (max-width: 991px){
@@ -50,5 +150,9 @@
     .results-info{
         flex-direction: column;
         text-align: center;
+    }
+
+    #selected-result{
+        flex-direction: column;
     }
 }

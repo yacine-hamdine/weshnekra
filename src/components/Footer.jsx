@@ -35,6 +35,10 @@ function Footer() {
                 <a href="https://linkedin.com/in/" target="_blank">
                   {data.samy}
                 </a>
+                <br />
+                <a href="https://linkedin.com/in/" target="_blank">
+                  {data.abderraouf}
+                </a>
               </b>
             </span>
         </div>

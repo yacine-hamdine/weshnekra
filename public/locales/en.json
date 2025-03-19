@@ -8,6 +8,7 @@
     "builtBy": "Built by",
     "ryane": "Saada Ryane Afnoukh",
     "yacine": "Yacine Hamdine",
+    "abderraouf": "Abderraouf Chekroun",
     "samy": "Samy Berrich",
     "about": "About",
     "infos": "WeshNekra is a solution that helps students choose their higher academic studies path throught a categorized and specialized quiz. It is a project developed on 2025 by a group of students in Algiers, Algeria.",
@@ -49,6 +50,7 @@
     "ecnBsnDescription": "Economics, Finance, Management and Marketing.",
     "sprSciName": "Sport Sciences",
     "sprSciDescription": "Physical Education, Sports Management and Coaching.",
+    "arcDsgName": "Architecture",
 
     "howResultsAreCalculated": "How Results Are Calculated ?",
     "resultsCalculation": "Each question is associated with a category/speciality and a score. The final result is the sum of the scores of the questions in each category/speciality.",
@@ -56,7 +58,9 @@
     "resultsInterpretation": "The results are displayed in a bar chart. The height of each bar represents the score of the category/speciality. The higher the bar, the more this category/speciality fits your profile and interests.",
     "howToUseResults": "How To Use The Results ?",
     "resultsUsage": "We recommend you to take the firsts categories/specialities from your results, and conduct further research about them and their professional opportunities both locally and worldwide.",
-    "savedResultsTitle": "Your Saved Quiz Results",
+    "savedResultsTitle": "Your Saved Quiz",
+    "quizMeThis": "Take Quiz",
+    "viewResult": "View Results",
 
     "progress": "Progress",
     "quizRestart": "Restart",

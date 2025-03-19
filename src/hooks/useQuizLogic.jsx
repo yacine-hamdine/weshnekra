@@ -37,10 +37,11 @@ const useQuizLogic = (quizType, resultsGates) => {
       JSON.stringify({
         savedResponses: responses,
         savedRawScores: rawScores,
-        savedIndex: currentIndex
+        savedIndex: currentIndex,
+        savedSize: questions.length,
       })
     );
-  }, [responses, rawScores, currentIndex, quizType]);
+  }, [responses, rawScores, currentIndex, quizType, questions]);
 
   // Normalization: scale rawScores to a 0-100 range based on current min and max
   const normalizeScores = (scores) => {
@@ -98,7 +99,7 @@ const useQuizLogic = (quizType, resultsGates) => {
 
   // Compute hybrid score as a weighted average (using alpha, e.g., 0.5)
   useEffect(() => {
-    const alpha = 0.5; // Adjust alpha as needed (or even 0.7)
+    const alpha = 0.3; // Adjust alpha as needed (or even 0.3)
     const newHybrid = {};
     resultsGates.forEach((cat) => {
       const norm = normalizedScores[cat] !== undefined ? normalizedScores[cat] : 0;
@@ -106,6 +107,7 @@ const useQuizLogic = (quizType, resultsGates) => {
       newHybrid[cat] = alpha * norm + (1 - alpha) * reg;
     });
     setHybridScores(newHybrid);
+
   }, [normalizedScores, regulatedScores]);
 
   // Handle slider change: update base state (responses and rawScores)
