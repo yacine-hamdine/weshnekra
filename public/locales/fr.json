@@ -70,5 +70,15 @@
     "quizPrevious": "Précédent",
     "disagree": "Totalement en Désaccord",
     "agree": "Totalement d'Accord",
-    "finishQuiz": "Terminer"
+    "finishQuiz": "Terminer",
+
+    "kaitenVokse": "Kaiten Vokse Group",
+    "ceo": "PDG",
+    "cto": "Directeur technique",
+    "dev": "Développeur",
+    "missionTitle": "Notre Mission",
+    "missionText": "Kaiten Vokse Group, fondé en 2025 par un groupe d'étudiants algériens innovants, est une société de services et de conseil en informatique avec une vision révolutionnaire. Notre nom combine le mot japonais “Kaiten” (qui signifie transformation ou révolution) et le mot norvégien “Vokse” (qui signifie grandir), reflétant ainsi notre mission principale : favoriser une croissance transformative à l’ère numérique. Nous sommes spécialisés dans la conception et le développement de systèmes informatiques robustes, la création de produits de pointe et la fourniture de services de conseil stratégiques permettant aux entreprises d'innover. À WeshNekra—notre projet phare conçu pour guider les étudiants dans le choix de leur parcours académique—nous exploitons les données, la technologie et les idées créatives pour aider à façonner un avenir meilleur. Notre mission est simple mais ambitieuse : révolutionner le monde grâce à l’innovation en informatique. Nous nous efforçons de créer des solutions qui ne se contentent pas de répondre aux défis d’aujourd’hui, mais qui posent également les bases de la croissance et de la transformation de demain. Inshallah, grâce à notre quête incessante d’excellence et d’innovation, nous contribuerons à un monde meilleur et plus connecté.",
+    "teamTitle": "Notre Équipe",
+    "teamText": "Nous sommes un groupe d'étudiants à Alger, en Algérie."
+
 }

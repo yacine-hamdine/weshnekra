@@ -40,9 +40,10 @@
 #about-contact .contact-card{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     gap: 10px;
+    width: 100%;
 }
 
 @media screen and (min-width: 50px) and (max-width: 767px){

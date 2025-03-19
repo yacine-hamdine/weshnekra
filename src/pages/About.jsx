@@ -3,7 +3,7 @@ import Loading from "../components/Loading";
 import "../styles/about.css";
 import RyanePhoto from "../assets/images/ryane-saada-afnoukh.webp";
 import YacinePhoto from "../assets/images/yacine-hamdine.webp";
-import SamyPhoto from "../assets/images/samy-berrich.png";
+import SamyPhoto from "../assets/images/samy-berrich.webp";
 import AbderraoufPhoto from "../assets/images/abderraouf-chekroun.webp";
 import EmailIcon from "../assets/icons/email.svg";
 import LinkedinIcon from "../assets/icons/linkedin.svg";

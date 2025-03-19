@@ -33,12 +33,12 @@ const StartQuiz = () => {
       animate: {
         x: 0,
         opacity: 1,
-        transition: { duration: 0.3, ease: "easeInOut" },
+        transition: { duration: 0.15, ease: "easeInOut" },
       },
       exit: (direction) => ({
         x: direction > 0 ? -100 : 100, // If next, exit to the left; if previous, exit to the right
         opacity: 0,
-        transition: { duration: 0.3, ease: "easeInOut" },
+        transition: { duration: 0.15, ease: "easeInOut" },
       }),
     };
 
