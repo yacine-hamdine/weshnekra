@@ -74,6 +74,22 @@ input, select{
   padding: 8px 40px;
 }
 
+.bounce-btn{
+  margin: 5px 0;
+  cursor: pointer;
+  background-color: #000;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  font-size: var(--txt-fs);
+}
+
 .link{
   font-size: var(--txt-fs);
   transition: all ease-in-out .1s;
@@ -144,8 +160,8 @@ nav{
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  gap: 20px;
-  padding: 5% 10%;
+  gap: 40px;
+  padding: 3% 10%;
   margin-top: 60px;
 }
 
@@ -201,7 +217,9 @@ footer #credits, footer #infos{
 
   .content{
     margin-top: 0;
+    gap: 30px;
   }
+
 }
 
 @media screen and (min-width: 50px) and (max-width: 767px){
@@ -272,6 +290,7 @@ footer #credits, footer #infos{
   .content{
     margin-top: 0;
     padding: 5% 5%;
+    gap: 25px;
   }
 
 }

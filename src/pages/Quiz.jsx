@@ -19,9 +19,6 @@ const Quiz = () => {
 
   return (
     <>
-      {
-        // TODO: add a "Continue Quiz" component if user has already started the quiz and has not finished it
-      }
       <section id="quiz-header">
         <h1 className="title">{data.quiz}</h1>
       </section>

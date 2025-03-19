@@ -17,7 +17,7 @@
     "heroTitle": "Determine Your Acedemic Path With Ease",
     "heroText": "Welcome to our platform dedicated for future college students ! We help you explore your passions and choose the field that fits you the best.",
     "startQuiz": "Start",
-    "specialQuiz": "Specialized Test",
+    "specialQuiz": "Special",
 
     "exploreTitle": "Discover Our Unique and Interactive Features",
     "exploreText": "We offer interavtive quizzes that will help new baccalaureate's graduated students identify their interests and skills. Based on the answers, we provide a list of recommended fields that match their profile.",
@@ -53,7 +53,7 @@
     "arcDsgName": "Architecture",
 
     "howResultsAreCalculated": "How Results Are Calculated ?",
-    "resultsCalculation": "Each question is associated with a category/speciality and a score. The final result is the sum of the scores of the questions in each category/speciality.",
+    "resultsCalculation": "Each question is associated with a category/speciality and a score. The final result is calculated using a robust model/algorithm we created : \"Alpha-Hybrid Scoring Method\" variant of α=0.3.",
     "howToInterpretResults": "How To Interpret The Results ?",
     "resultsInterpretation": "The results are displayed in a bar chart. The height of each bar represents the score of the category/speciality. The higher the bar, the more this category/speciality fits your profile and interests.",
     "howToUseResults": "How To Use The Results ?",
@@ -70,5 +70,15 @@
     "quizPrevious": "Previous",
     "disagree": "Completely Disagree",
     "agree": "Completely Agree",
-    "finishQuiz": "Finish"
+    "finishQuiz": "Finish",
+
+    "kaitenVokse": "Kaiten Vokse Group",
+    "ceo": "CEO",
+    "cto": "CTO",
+    "dev": "Developer",
+    "missionTitle": "Our Mission",
+    "missionText": "Kaiten Vokse Group, Founded in 2025 by a group of innovative Algerian students, Kaiten Vokse Group is an IT services and consulting firm with a revolutionary vision. Our name blends the Japanese word “Kaiten” (meaning transformation or revolution) and the Norwegian word “Vokse” (meaning grow), reflecting our core mission: to drive transformative growth in the digital era. We specialize in designing and building robust IT systems, developing cutting-edge products, and delivering strategic consulting services that empower businesses to innovate. At WeshNekra—our flagship project designed to guide students in choosing the right academic path—we harness data, technology, and creative insights to help shape a brighter future. Our mission is simple yet ambitious: to revolutionize the world through IT innovation. We strive to create solutions that not only solve today’s challenges but also lay the groundwork for tomorrow’s growth and transformation. Inshallah, through our relentless pursuit of excellence and innovation, we will contribute to a better, more connected world.",                                    
+    "teamTitle": "Our Team",
+    "teamText": "We are a group of students in Algiers, Algeria."
+
 }

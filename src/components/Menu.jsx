@@ -76,6 +76,11 @@ function Menu() {
           {data?.results}
         </span>
       </Link>
+      <Link to="/about">
+        <span className="text link">
+          {data?.about}
+        </span>
+      </Link>
     </nav>
   );
 }

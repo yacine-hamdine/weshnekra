@@ -178,7 +178,6 @@ progress::-webkit-progress-value{
 }
 
 .quiz-progress{
-    margin-bottom: 30px;
     width: 100%;
     max-width: 800px;
 }
@@ -261,6 +260,10 @@ progress::-webkit-progress-value{
 
 .quiz-content{
     width: 100%;
+    position: relative;
+    /* Choose a fixed or min-height that accommodates the question text */
+    height: 300px;
+    overflow: hidden; /* So sliding out/in doesn't affect other elements */
 }
 
 .quiz-controls{
@@ -335,6 +338,9 @@ progress::-webkit-progress-value{
         gap: 10px;
     }
 
+    .quiz-content{
+        height: 290px;
+    }
 }
 
 @media screen and (min-width: 50px) and (max-width: 767px){
@@ -370,10 +376,6 @@ progress::-webkit-progress-value{
         gap: 5px;
     }
 
-    .quiz-progress{
-        margin-bottom: 10px;
-    }
-
     .quiz-card-question{
         gap: 20px;
     }
@@ -401,5 +403,9 @@ progress::-webkit-progress-value{
 
     .ctrl-btn-text{
         display: none;
+    }
+
+    .quiz-content{
+        height: 260px;
     }
 }

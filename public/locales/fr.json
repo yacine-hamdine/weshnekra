@@ -17,7 +17,7 @@
     "heroTitle": "Déterminez Votre Parcours Académique Facilement",
     "heroText": "Bienvenue sur notre plateforme dédiée aux futurs étudiants universitaires ! Nous vous aidons à explorer vos passions et à choisir le domaine qui vous convient le mieux.",
     "startQuiz": "Commencer",
-    "specialQuiz": "Test Spécialisé",
+    "specialQuiz": "Spécial",
 
     "exploreTitle": "Découvrez Nos Fonctionnalités Uniques et Interactives",
     "exploreText": "Nous proposons des quiz interactifs qui aideront les nouveaux bacheliers à identifier leurs intérêts et compétences. En fonction des réponses, nous fournissons une liste de domaines recommandés qui correspondent à leur profil.",
@@ -53,7 +53,7 @@
     "arcDsgName": "Architecture",
 
     "howResultsAreCalculated": "Comment les Résultats Sont-ils Calculés ?",
-    "resultsCalculation": "Chaque question est associée à une catégorie/spécialité et un score. Le résultat final est la somme des scores des questions dans chaque catégorie/spécialité.",
+    "resultsCalculation": "Chaque question est associée à une catégorie/spécialité et à un score. Le résultat final est calculé à l'aide d'un modèle/algorithme robuste que nous avons créé : \"Méthode de Scorage Alpha-Hybride\", une variante avec α=0.3.",
     "howToInterpretResults": "Comment Interpréter les Résultats ?",
     "resultsInterpretation": "Les résultats sont affichés sous forme de graphique à barres. La hauteur de chaque barre représente le score de la catégorie/spécialité. Plus la barre est haute, plus cette catégorie/spécialité correspond à votre profil et à vos intérêts.",
     "howToUseResults": "Comment Utiliser les Résultats ?",

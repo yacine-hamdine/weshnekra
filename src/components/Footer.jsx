@@ -36,7 +36,7 @@ function Footer() {
                   {data.samy}
                 </a>
                 <br />
-                <a href="https://linkedin.com/in/" target="_blank">
+                <a href="https://linkedin.com/in/raouf-chekroun-04a108259/" target="_blank">
                   {data.abderraouf}
                 </a>
               </b>
