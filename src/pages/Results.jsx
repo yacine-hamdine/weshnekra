@@ -95,7 +95,7 @@ const Results = () => {
           </div>
           <div className="result-recommendation">
             <div id="recommended-gates">
-              <h2 className="subtitle">{data.recommendedPath || "Recommended Categories:"}</h2>
+              <h2 className="subtitle">{data.recommendedPath}</h2>
                 {
                   top3Hybrid.map((cat, idx) => (
                     <div key={idx} className="recommended-gate">
@@ -168,14 +168,14 @@ const Results = () => {
                     // If the quiz is finished, display the "View Result" button.
                     <Link to={`/results/${result.quizType}`}>
                       <button className="secondary-btn">
-                        {data.viewResult || "View Result"}
+                        {data.viewResult}
                       </button>
                     </Link>
                   ) : (
                     // If the quiz is not finished, display a "Continue Quiz" button.
                     <Link to={`/quiz/${result.quizType}`}>
                       <button className="secondary-btn">
-                        {data.continueQuiz || "Continue Quiz"}
+                        {data.continueQuiz}
                       </button>
                     </Link>
                 )}

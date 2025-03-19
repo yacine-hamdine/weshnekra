@@ -37,6 +37,7 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
+    gap: 50px;
 }
 
 #selected-result .result-recommendation, #selected-result .result-chart{
@@ -83,7 +84,7 @@
     min-width: 30px;
 }
 
-.recommended-gate .gate-action{
+.recommended-gate .gate-content, .recommended-gate .gate-action{
     width: 100%;
 }
 
@@ -137,6 +138,10 @@
         text-align: left;
     }
 
+    #selected-result{
+        gap: 30px;
+    }
+
 }
 
 @media screen and (min-width: 50px) and (max-width: 767px){
@@ -154,5 +159,9 @@
 
     #selected-result{
         flex-direction: column;
+    }
+
+    #selected-result{
+        gap: 20px;
     }
 }

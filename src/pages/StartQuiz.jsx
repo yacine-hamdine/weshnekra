@@ -1,7 +1,7 @@
 import { useLanguage } from "../contexts/language"; // Import the context
 import Loading from "../components/Loading";
 import { useNavigate, useParams } from "react-router-dom";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import useQuizLogic from "../hooks/useQuizLogic";
 import PreviousIcon from "../assets/icons/previous.svg";
 import NextIcon from "../assets/icons/next.svg";
@@ -60,13 +60,20 @@ const StartQuiz = () => {
                     <span>{currentIndex + 1}</span>/<span>{questions.length}</span>
                 </div>
             </div>
-            {/* <motion.div
-              className="progress-bar"
-              initial={{ width: "0%" }}
-              animate={{ width: `${(currentIndex + 1) * 100 / questions.lengh}%` }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            /> */}
-            <progress value={currentIndex + 1} max={questions.length} className="quiz-progress-bar"></progress>
+            <div className="quiz-progress-bar-container">
+              <motion.div
+                className="progress-bar"
+                initial={{ width: "0%" }}
+                animate={{ width: `${(currentIndex + 1) * 100 / questions.length}%` }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                style={{
+                  height: "10px",
+                  backgroundColor: "#000000",
+                  borderRadius: "5px",
+                }}
+              />
+            </div>
+            {/* <progress value={currentIndex + 1} max={questions.length} className="quiz-progress-bar"></progress> */}
         </div>
 
         <div className="quiz-widget">
@@ -147,7 +154,37 @@ const StartQuiz = () => {
                 </span>
               </button>
             </div>
-            { currentIndex === questions.length - 1 ? 
+            {currentIndex === questions.length - 1 ? (
+              <motion.button
+                className="main-btn"
+                onClick={handleFinishQuiz}
+                initial={{ opacity: 0, x: 50 }} // Start off-screen to the right
+                animate={{ opacity: 1, x: 0 }} // Slide in to its position
+                transition={{
+                  type: "spring", // Bouncy effect
+                  stiffness: 120, // Controls the bounce
+                  damping: 10, // Controls how much it slows down
+                }}
+              >
+                {data.finishQuiz}
+              </motion.button>
+            ) : (
+              <div className="quiz-next">
+                <button
+                  className="main-ctrl ctrl-btn"
+                  disabled={currentIndex === questions.length - 1}
+                  onClick={() => setCurrentIndex((prev) => prev + 1)}
+                >
+                  <span className="ctrl-btn-text" style={{ color: "white" }}>
+                    {data.quizNext}
+                  </span>
+                  <span className="ctrl-btn-icon">
+                    <img src={NextIcon} alt="next" />
+                  </span>
+                </button>
+              </div>
+            )}
+            {/* { currentIndex === questions.length - 1 ? 
                 (
                   <button className="main-btn" onClick={handleFinishQuiz}>
                     {data.finishQuiz}
@@ -169,7 +206,7 @@ const StartQuiz = () => {
                     </button>
                   </div>
                 )
-            }
+            } */}
           </div>
 
         </div>

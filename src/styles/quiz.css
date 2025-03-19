@@ -150,6 +150,15 @@
     border-radius: 50px;
     cursor: grab;
 }
+
+/************* For Framer Motion ************/
+.quiz-progress-bar-container{
+    width: 100%;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+/********************************************/
   
 progress{
     appearance: none;
