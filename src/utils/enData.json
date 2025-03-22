@@ -391,12 +391,12 @@
     },
     {
       "Q": "I want to teach or pass on knowledge.",
-      "xct-sci": 1,
+      "xct-sci": 5,
       "hmn-sci": 4,
-      "lth-sci": 2,
-      "lng-lit": 4,
+      "lth-sci": 4,
+      "lng-lit": 1,
       "ecn-bsn": 1,
-      "spr-sci": 2,
+      "spr-sci": 0.5,
       "arc-dsg": 2
     },
     {
