@@ -72,7 +72,7 @@ const StartQuiz = () => {
           direction={direction}
           handleSliderChange={handleSliderChange}
           responses={responses}
-          colors={["#ff0000", "#ff5500", "#ffaa00", "#cbcb00", "#88d100", "#00ff00"]}
+          colors={["#ff0000", "#ffaa00", "#cbcb00", "#88d100", "#00ff00"]} //"#ff5500",
           data={data}
         />
         <QuizControls

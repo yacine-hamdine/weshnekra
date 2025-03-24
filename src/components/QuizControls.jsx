@@ -40,7 +40,7 @@ const QuizControls = ({
           onClick={() => {
             setDirection(-1);
             setCurrentIndex(0);
-            setResponses({});
+            setResponses(questions.reduce((acc, q) => ({ ...acc, [q.id]: 1 }), {}));
             setRawScores(resultsGates.reduce((acc, cat) => ({ ...acc, [cat]: 0 }), {}));
             localStorage.removeItem(`quiz_state_${quizType}`);
           }}

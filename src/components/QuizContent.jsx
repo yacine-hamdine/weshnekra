@@ -31,6 +31,8 @@ const QuizContent = ({
 }) => {
   if (questions.length === 0) return <Loading />;
 
+  const responseVal = responses[questions[currentIndex].id]; // response value default and min is 1
+
   return (
     <div className="quiz-content" style={{ position: "relative", minHeight: "250px" }}>
       <AnimatePresence custom={direction} mode="wait">
@@ -51,26 +53,26 @@ const QuizContent = ({
               <span
                 className="input-value-box"
                 style={{
-                  backgroundColor: `${colors[responses[questions[currentIndex].id] || 0]}35`,
+                  backgroundColor: `${colors[responseVal - 1]}35`,
                 }}
               >
                 <b
                   className="input-value-content"
                   style={{
-                    color: `${colors[responses[questions[currentIndex].id] || 0]}`,
+                    color: `${colors[responseVal - 1]}`,
                   }}
                 >
-                  {responses[questions[currentIndex].id] || 0}
+                  {responses[questions[currentIndex].id] || 1}
                 </b>
               </span>
             </div>
             <div className="quiz-card-question-input">
               <input
                 type="range"
-                min="0"
+                min="1"
                 max="5"
                 step="1"
-                value={responses[questions[currentIndex].id] || 0}
+                value={responses[questions[currentIndex].id] || 1}
                 onChange={(e) =>
                   handleSliderChange(
                     questions[currentIndex].id,
@@ -84,7 +86,7 @@ const QuizContent = ({
             <div className="quiz-card-question-data text">
               <div className="quiz-card-question-data-min">
                 <span className="quiz-card-question-data-min-num" style={{ color: colors[0] }}>
-                  0
+                  1
                 </span>
                 <br />
                 <span className="quiz-card-question-data-min-text">
@@ -92,7 +94,7 @@ const QuizContent = ({
                 </span>
               </div>
               <div className="quiz-card-question-data-min">
-                <span className="quiz-card-question-data-min-num" style={{ color: colors[5] }}>
+                <span className="quiz-card-question-data-min-num" style={{ color: colors[4] }}>
                   5
                 </span>
                 <br />

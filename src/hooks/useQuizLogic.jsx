@@ -26,7 +26,10 @@ const useQuizLogic = (quizType, resultsGates) => {
       return;
     }
     fetchQuestions(db, quizType)
-      .then(setQuestions)
+      .then((questions) => {
+        setQuestions(questions);
+        setResponses(savedState.savedResponses || questions.reduce((acc, q) => ({ ...acc, [q.id]: 1 }), {}));
+      })
       .catch((err) => console.error("Error fetching questions:", err));
   }, [quizType]);
 
@@ -112,7 +115,7 @@ const useQuizLogic = (quizType, resultsGates) => {
 
   // Handle slider change: update base state (responses and rawScores)
   const handleSliderChange = (questionId, value, weights) => {
-    const previousValue = responses[questionId] || 0;
+    const previousValue = responses[questionId] || 1;
     setResponses((prev) => ({ ...prev, [questionId]: value }));
     const delta = value - previousValue;
     setRawScores((prevScores) => {
