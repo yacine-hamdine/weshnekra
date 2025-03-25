@@ -8,6 +8,7 @@ import XctSciIcon from "../assets/icons/xct-sci.svg";
 import LthSciIcon from "../assets/icons/lth-sci.svg";
 import HmnSciIcon from "../assets/icons/hmn-sci.svg";
 import EcnBsnIcon from "../assets/icons/ecn-bsn.svg";
+import ArcDsgIcon from "../assets/icons/arc-dsg.svg"
 import SprSciIcon from "../assets/icons/spr-sci.svg";
 import LngLitIcon from "../assets/icons/lng-lit.svg";
 const Quiz = () => {
@@ -117,7 +118,25 @@ const Quiz = () => {
               {data.lthSciDescription}
             </div>
             <div className="option-btn">
-              <Link to={"/quiz/special/lth-sci"}>
+              <Link to={"/quiz/lth-sci"}>
+                <button className="secondary-btn">
+                  {data.startQuiz}
+                </button>
+              </Link>
+            </div>
+          </div>
+          <div className="quiz-select-option" id="arc-dsg">
+            <div className="option-icon">
+              <img src={ArcDsgIcon} alt="Architecture & Urbanism" />
+            </div>
+            <div className="option-name subtitle">
+              {data.arcDsgName}
+            </div>
+            <div className="option-description text">
+              {data.arcDsgDescription}
+            </div>
+            <div className="option-btn">
+              <Link to={"/quiz/arc-dsg"}>
                 <button className="secondary-btn">
                   {data.startQuiz}
                 </button>

@@ -1,0 +1,502 @@
+[
+    {
+      "Q": "I enjoy solving complex problems.",
+      "xct-sci": 5,
+      "hmn-sci": 2,
+      "lth-sci": 2,
+      "lng-lit": 0.5,
+      "ecn-bsn": 4,
+      "spr-sci": 0.5,
+      "arc-dsg": 2
+    },
+    {
+      "Q": "I prefer working in a team and being on the move.",
+      "xct-sci": 1,
+      "hmn-sci": 2,
+      "lth-sci": 5,
+      "lng-lit": 0.5,
+      "ecn-bsn": 5,
+      "spr-sci": 4,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I read novels or like to write.",
+      "xct-sci": 2,
+      "hmn-sci": 4,
+      "lth-sci": 2,
+      "lng-lit": 5,
+      "ecn-bsn": 1,
+      "spr-sci": 0.5,
+      "arc-dsg": 2
+    },
+    {
+      "Q": "I want to understand the human body and help others.",
+      "xct-sci": 4,
+      "hmn-sci": 2,
+      "lth-sci": 5,
+      "lng-lit": 0.5,
+      "ecn-bsn": 0.5,
+      "spr-sci": 1,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I draw or create designs in my free time.",
+      "xct-sci": 0.5,
+      "hmn-sci": 2,
+      "lth-sci": 1,
+      "lng-lit": 1,
+      "ecn-bsn": 0.5,
+      "spr-sci": 0.5,
+      "arc-dsg": 5
+    },
+    {
+      "Q": "A structured environment with clear rules inspires me.",
+      "xct-sci": 5,
+      "hmn-sci": 1,
+      "lth-sci": 4,
+      "lng-lit": 0.5,
+      "ecn-bsn": 4,
+      "spr-sci": 2,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I participate in debates on politics or society.",
+      "xct-sci": 0.5,
+      "hmn-sci": 5,
+      "lth-sci": 0.5,
+      "lng-lit": 4,
+      "ecn-bsn": 1,
+      "spr-sci": 0.5,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "Extreme sports or physical challenges excite me.",
+      "xct-sci": 0.5,
+      "hmn-sci": 2,
+      "lth-sci": 1,
+      "lng-lit": 0.5,
+      "ecn-bsn": 1,
+      "spr-sci": 5,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I dream of starting my own business.",
+      "xct-sci": 2,
+      "hmn-sci": 4,
+      "lth-sci": 2,
+      "lng-lit": 0.5,
+      "ecn-bsn": 5,
+      "spr-sci": 2,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "Learning a new language is more stimulating than math.",
+      "xct-sci": 0.5,
+      "hmn-sci": 4,
+      "lth-sci": 0.5,
+      "lng-lit": 5,
+      "ecn-bsn": 0.5,
+      "spr-sci": 2,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I am interested in social phenomena (inequalities, culture).",
+      "xct-sci": 2,
+      "hmn-sci": 5,
+      "lth-sci": 2,
+      "lng-lit": 4,
+      "ecn-bsn": 1,
+      "spr-sci": 0.5,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I prefer hands-on work (DIY, lab experiments).",
+      "xct-sci": 4,
+      "hmn-sci": 2,
+      "lth-sci": 5,
+      "lng-lit": 0.5,
+      "ecn-bsn": 0.5,
+      "spr-sci": 0.5,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I want to work abroad or with different cultures.",
+      "xct-sci": 2,
+      "hmn-sci": 5,
+      "lth-sci": 2,
+      "lng-lit": 4,
+      "ecn-bsn": 2,
+      "spr-sci": 1,
+      "arc-dsg": 2
+    },
+    {
+      "Q": "Abstract subjects (philosophy, psychology) fascinate me.",
+      "xct-sci": 2,
+      "hmn-sci": 5,
+      "lth-sci": 2,
+      "lng-lit": 4,
+      "ecn-bsn": 1,
+      "spr-sci": 0.5,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I am fascinated by new technologies.",
+      "xct-sci": 5,
+      "hmn-sci": 1,
+      "lth-sci": 2,
+      "lng-lit": 0.5,
+      "ecn-bsn": 4,
+      "spr-sci": 0.5,
+      "arc-dsg": 2
+    },
+    {
+      "Q": "I want to coach athletes or teach sports.",
+      "xct-sci": 0.5,
+      "hmn-sci": 2,
+      "lth-sci": 1,
+      "lng-lit": 1,
+      "ecn-bsn": 0.5,
+      "spr-sci": 5,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "Organizing events or projects comes naturally to me.",
+      "xct-sci": 1,
+      "hmn-sci": 4,
+      "lth-sci": 0.5,
+      "lng-lit": 1,
+      "ecn-bsn": 4,
+      "spr-sci": 2,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I prefer analyzing data rather than literary texts.",
+      "xct-sci": 5,
+      "hmn-sci": 1,
+      "lth-sci": 2,
+      "lng-lit": 0.5,
+      "ecn-bsn": 4,
+      "spr-sci": 0.5,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I am sensitive to the aesthetics of buildings or landscapes.",
+      "xct-sci": 2,
+      "hmn-sci": 2,
+      "lth-sci": 0.5,
+      "lng-lit": 1,
+      "ecn-bsn": 1,
+      "spr-sci": 0.5,
+      "arc-dsg": 5
+    },
+    {
+      "Q": "I want to study human behavior (psychology, sociology).",
+      "xct-sci": 0.5,
+      "hmn-sci": 5,
+      "lth-sci": 1,
+      "lng-lit": 4,
+      "ecn-bsn": 2,
+      "spr-sci": 1,
+      "arc-dsg": 2
+    },
+    {
+      "Q": "Sports competitions motivate me.",
+      "xct-sci": 0.5,
+      "hmn-sci": 2,
+      "lth-sci": 1,
+      "lng-lit": 1,
+      "ecn-bsn": 2,
+      "spr-sci": 5,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I prefer strategy games (chess, video games).",
+      "xct-sci": 5,
+      "hmn-sci": 2,
+      "lth-sci": 2,
+      "lng-lit": 0.5,
+      "ecn-bsn": 4,
+      "spr-sci": 2,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I want to work in humanitarian aid or education.",
+      "xct-sci": 0.5,
+      "hmn-sci": 5,
+      "lth-sci": 1,
+      "lng-lit": 2,
+      "ecn-bsn": 1,
+      "spr-sci": 2,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I am interested in finance or business management.",
+      "xct-sci": 2,
+      "hmn-sci": 1,
+      "lth-sci": 0.5,
+      "lng-lit": 0.5,
+      "ecn-bsn": 5,
+      "spr-sci": 1,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I prefer creative activities (painting, music) to science.",
+      "xct-sci": 1,
+      "hmn-sci": 4,
+      "lth-sci": 1,
+      "lng-lit": 4,
+      "ecn-bsn": 1,
+      "spr-sci": 2,
+      "arc-dsg": 5
+    },
+    {
+      "Q": "I am curious about medical innovations.",
+      "xct-sci": 4,
+      "hmn-sci": 2,
+      "lth-sci": 5,
+      "lng-lit": 0.5,
+      "ecn-bsn": 1,
+      "spr-sci": 1,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "Travel and cultural discoveries are essential for me.",
+      "xct-sci": 2,
+      "hmn-sci": 5,
+      "lth-sci": 2,
+      "lng-lit": 4,
+      "ecn-bsn": 2,
+      "spr-sci": 2,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I prefer theoretical courses to practical work.",
+      "xct-sci": 4,
+      "hmn-sci": 5,
+      "lth-sci": 1,
+      "lng-lit": 2,
+      "ecn-bsn": 1,
+      "spr-sci": 0.5,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I want to design software or complex systems.",
+      "xct-sci": 5,
+      "hmn-sci": 1,
+      "lth-sci": 2,
+      "lng-lit": 0.5,
+      "ecn-bsn": 4,
+      "spr-sci": 0.5,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I am comfortable speaking in public.",
+      "xct-sci": 2,
+      "hmn-sci": 5,
+      "lth-sci": 2,
+      "lng-lit": 4,
+      "ecn-bsn": 4,
+      "spr-sci": 2,
+      "arc-dsg": 2
+    },
+    {
+      "Q": "I prefer outdoor jobs rather than office jobs.",
+      "xct-sci": 1,
+      "hmn-sci": 2,
+      "lth-sci": 0.5,
+      "lng-lit": 1,
+      "ecn-bsn": 1,
+      "spr-sci": 4,
+      "arc-dsg": 2
+    },
+    {
+      "Q": "I like understanding economic mechanisms (markets, inflation).",
+      "xct-sci": 2,
+      "hmn-sci": 4,
+      "lth-sci": 1,
+      "lng-lit": 0.5,
+      "ecn-bsn": 5,
+      "spr-sci": 0.5,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I am attracted to careers in fashion or design.",
+      "xct-sci": 0.5,
+      "hmn-sci": 2,
+      "lth-sci": 0.5,
+      "lng-lit": 4,
+      "ecn-bsn": 1,
+      "spr-sci": 1,
+      "arc-dsg": 5
+    },
+    {
+      "Q": "I want to study ecosystems or the environment.",
+      "xct-sci": 4,
+      "hmn-sci": 5,
+      "lth-sci": 2,
+      "lng-lit": 0.5,
+      "ecn-bsn": 0.5,
+      "spr-sci": 0.5,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I prefer repetitive and precise tasks.",
+      "xct-sci": 2,
+      "hmn-sci": 1,
+      "lth-sci": 4,
+      "lng-lit": 2,
+      "ecn-bsn": 2,
+      "spr-sci": 4,
+      "arc-dsg": 2
+    },
+    {
+      "Q": "I am interested in history or archaeology.",
+      "xct-sci": 1,
+      "hmn-sci": 5,
+      "lth-sci": 2,
+      "lng-lit": 1,
+      "ecn-bsn": 1,
+      "spr-sci": 0.5,
+      "arc-dsg": 4
+    },
+    {
+      "Q": "I want to develop mobile applications or websites.",
+      "xct-sci": 5,
+      "hmn-sci": 1,
+      "lth-sci": 2,
+      "lng-lit": 0.5,
+      "ecn-bsn": 4,
+      "spr-sci": 0.5,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I prefer jobs related to nature (agriculture, zoology).",
+      "xct-sci": 4,
+      "hmn-sci": 5,
+      "lth-sci": 2,
+      "lng-lit": 0.5,
+      "ecn-bsn": 1,
+      "spr-sci": 0.5,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I am passionate about cooking or nutrition.",
+      "xct-sci": 2,
+      "hmn-sci": 2,
+      "lth-sci": 4,
+      "lng-lit": 0.5,
+      "ecn-bsn": 1,
+      "spr-sci": 1,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I want to teach or pass on knowledge.",
+      "xct-sci": 5,
+      "hmn-sci": 4,
+      "lth-sci": 4,
+      "lng-lit": 1,
+      "ecn-bsn": 1,
+      "spr-sci": 0.5,
+      "arc-dsg": 2
+    },
+    {
+      "Q": "Puzzles or logic games entertain me.",
+      "xct-sci": 5,
+      "hmn-sci": 2,
+      "lth-sci": 2,
+      "lng-lit": 0.5,
+      "ecn-bsn": 4,
+      "spr-sci": 0.5,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I am attracted to artistic professions (theater, cinema).",
+      "xct-sci": 1,
+      "hmn-sci": 5,
+      "lth-sci": 1,
+      "lng-lit": 4,
+      "ecn-bsn": 1,
+      "spr-sci": 2,
+      "arc-dsg": 2
+    },
+    {
+      "Q": "I want to work in marketing or communication.",
+      "xct-sci": 1,
+      "hmn-sci": 4,
+      "lth-sci": 2,
+      "lng-lit": 4,
+      "ecn-bsn": 5,
+      "spr-sci": 2,
+      "arc-dsg": 1
+    },
+    {
+      "Q": "I prefer experimental sciences (chemistry, biology).",
+      "xct-sci": 4,
+      "hmn-sci": 0.5,
+      "lth-sci": 5,
+      "lng-lit": 0.5,
+      "ecn-bsn": 0.5,
+      "spr-sci": 0.5,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I am interested in urban planning or land use planning.",
+      "xct-sci": 4,
+      "hmn-sci": 4,
+      "lth-sci": 1,
+      "lng-lit": 1,
+      "ecn-bsn": 2,
+      "spr-sci": 0.5,
+      "arc-dsg": 5
+    },
+    {
+      "Q": "I want to do laboratory research.",
+      "xct-sci": 4,
+      "hmn-sci": 1,
+      "lth-sci": 5,
+      "lng-lit": 0.5,
+      "ecn-bsn": 0.5,
+      "spr-sci": 0.5,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "Intellectual challenges bore me, I prefer action.",
+      "xct-sci": 0.5,
+      "hmn-sci": 1,
+      "lth-sci": 0.5,
+      "lng-lit": 0.5,
+      "ecn-bsn": 1,
+      "spr-sci": 5,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I am interested in clinical psychology or therapy.",
+      "xct-sci": 1,
+      "hmn-sci": 4,
+      "lth-sci": 5,
+      "lng-lit": 1,
+      "ecn-bsn": 0.5,
+      "spr-sci": 0.5,
+      "arc-dsg": 0.5
+    },
+    {
+      "Q": "I prefer jobs where I can travel frequently.",
+      "xct-sci": 1,
+      "hmn-sci": 5,
+      "lth-sci": 2,
+      "lng-lit": 4,
+      "ecn-bsn": 4,
+      "spr-sci": 2,
+      "arc-dsg": 2
+    },
+    {
+      "Q": "I want to design innovative houses or monuments.",
+      "xct-sci": 4,
+      "hmn-sci": 2,
+      "lth-sci": 0.5,
+      "lng-lit": 0.5,
+      "ecn-bsn": 1,
+      "spr-sci": 0.5,
+      "arc-dsg": 5
+    }
+]

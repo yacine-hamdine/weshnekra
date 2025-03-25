@@ -30,8 +30,8 @@
     "knowMore": "En savoir plus >",
 
     "quizInstructions": "Instructions des Tests",
-    "quizInstruction1": "Chaque Quiz comprend 20-50 questions.",
-    "quizInstruction2": "Pour chaque question, indiquez votre niveau d'accord sur une échelle de 0 à 5.",
+    "quizInstruction1": "Chaque Quiz comprend 10-50 questions.",
+    "quizInstruction2": "Pour chaque question, indiquez votre niveau d'accord sur une échelle de 1 à 5.",
     "quizInstruction3": "Prenez votre temps et répondez honnêtement pour obtenir les meilleurs résultats.",
     "quizWarningTitle": "Attention !",
     "quizWarningText": "Ce test est conçu uniquement comme un outil d'aide à l'orientation. Il ne remplace en aucun cas une réflexion personnelle approfondie ou un accompagnement professionnel.",

@@ -36,7 +36,7 @@ const ResultsChart = ({
               <div className="gate-content">
                 <div className="gate-icon">
                   <img 
-                    src={images[`../assets/icons/${cat}.svg`].default} 
+                    src={images[`../assets/icons/${cat}.svg`]?.default || images["../assets/icons/gen-cat.svg"]?.default} 
                     alt={data[`${toCamelCase(cat).replace("-", "")}Name`]} 
                   />
                 </div>

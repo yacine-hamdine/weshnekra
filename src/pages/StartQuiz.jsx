@@ -13,17 +13,6 @@ const StartQuiz = () => {
   const { language, translations, loading } = useLanguage();
   const data = translations;
 
-  // Example resultsGates instance
-  const resultsGatesInstance = [
-    "xct-sci",
-    "ecn-bsn",
-    "lng-lit",
-    "spr-sci",
-    "hmn-sci",
-    "lth-sci",
-    "arc-dsg"
-  ];
-
   const [
     questions,
     responses,
@@ -37,7 +26,7 @@ const StartQuiz = () => {
     resultsGates,
     setRawScores,
     setResponses
-  ] = useQuizLogic(quizType, resultsGatesInstance);
+  ] = useQuizLogic(quizType);
 
   const [direction, setDirection] = useState(0);
   const navigate = useNavigate();

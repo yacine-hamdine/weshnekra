@@ -19,7 +19,7 @@ const ResultsGrid = ({ savedResults, selectedResult, data, images }) => {
           >
             <div className="item-icon">
               <img 
-                src={images[`../assets/icons/${result.quizType}.svg`].default} 
+                src={images[`../assets/icons/${result.quizType}.svg`]?.default || images[`../assets/icons/gen-cat.svg`]?.default} 
                 alt={data[`${toCamelCase(result.quizType).replace("-", "")}Name`]} 
               />
             </div>
