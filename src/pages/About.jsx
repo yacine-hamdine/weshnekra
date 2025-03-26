@@ -48,7 +48,9 @@ const About = () => {
                         <img src={RyanePhoto} alt="Ryane Saada Afnoukh" />
                     </div>
                     <div className="team-member-name blg">
-                        {data.ryane}
+                        <a href="https://linkedin.com/in/asryane" target="_blank">
+                          {data.ryane}
+                        </a>
                     </div>
                     <div className="team-member-role text">
                         {data.ceo}
@@ -59,7 +61,9 @@ const About = () => {
                         <img src={YacinePhoto} alt="Yacine Hamdine" />
                     </div>
                     <div className="team-member-name blg">
-                        {data.yacine}
+                        <a href="https://linkedin.com/in/yacine-hamdine" target="_blank">
+                            {data.yacine}
+                        </a>
                     </div>
                     <div className="team-member-role text">
                         {data.cto}
@@ -70,7 +74,9 @@ const About = () => {
                         <img src={SamyPhoto} alt="Samy Berrich" />
                     </div>
                     <div className="team-member-name blg">
-                        {data.samy}
+                        <a href="https://linkedin.com/in/" target="_blank">
+                            {data.samy}
+                        </a>
                     </div>
                     <div className="team-member-role text">
                         {data.dev}
@@ -81,7 +87,9 @@ const About = () => {
                         <img src={AbderraoufPhoto} alt="Abderraouf Chekroun" />
                     </div>
                     <div className="team-member-name blg">
-                        {data.abderraouf}
+                        <a href="https://linkedin.com/in/raouf-chekroun-04a108259/" target="_blank">
+                            {data.abderraouf}
+                        </a>
                     </div>
                     <div className="team-member-role text">
                         {data.dev}
