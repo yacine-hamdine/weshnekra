@@ -16,28 +16,20 @@ function Footer() {
             <br />
             <br />
             <span className="text">
-              {data.ideaBy} :
+              {data.linkedin} :
               <br />
               <b>
-                <a href="https://linkedin.com/in/asryane" target="_blank">
-                  {data.ryane}
+                <a href="https://linkedin.com/company/kaiten-vokse-group" target="_blank">
+                  Kaiten Vokse Group
                 </a>
               </b>
               <br />
               <br />
-              {data.builtBy} :
+              {data.email} :
               <br />
               <b>
-                <a href="https://linkedin.com/in/yacine-hamdine" target="_blank">
-                  {data.yacine}
-                </a>
-                <br />
-                <a href="https://linkedin.com/in/" target="_blank">
-                  {data.samy}
-                </a>
-                <br />
-                <a href="https://linkedin.com/in/raouf-chekroun-04a108259/" target="_blank">
-                  {data.abderraouf}
+                <a href="mailto:kaitenvoksegroup@gmail.com" target="_blank">
+                  kaitenvoskegroup@gmail.com
                 </a>
               </b>
             </span>

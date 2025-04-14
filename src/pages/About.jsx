@@ -5,6 +5,10 @@ import RyanePhoto from "../assets/images/ryane-saada-afnoukh.webp";
 import YacinePhoto from "../assets/images/yacine-hamdine.webp";
 import SamyPhoto from "../assets/images/samy-berrich.webp";
 import AbderraoufPhoto from "../assets/images/abderraouf-chekroun.webp";
+import SarahPhoto from "../assets/images/pfp-default.jpg";
+import LotfiPhoto from "../assets/images/pfp-default.jpg";
+import MehdiPhoto from "../assets/images/pfp-default.jpg";
+import OuaelPhoto from "../assets/images/pfp-default.jpg";
 import EmailIcon from "../assets/icons/email.svg";
 import LinkedinIcon from "../assets/icons/linkedin.svg";
 
@@ -89,6 +93,58 @@ const About = () => {
                     <div className="team-member-name blg">
                         <a href="https://linkedin.com/in/raouf-chekroun-04a108259/" target="_blank">
                             {data.abderraouf}
+                        </a>
+                    </div>
+                    <div className="team-member-role text">
+                        {data.dev}
+                    </div>
+                </div>
+                <div className="team-member">
+                    <div className="team-member-image">
+                        <img src={SarahPhoto} alt="Sarah Khodja" />
+                    </div>
+                    <div className="team-member-name blg">
+                        <a href="https://linkedin.com/in/" target="_blank">
+                            {data.sarah}
+                        </a>
+                    </div>
+                    <div className="team-member-role text">
+                        {data.cmo}
+                    </div>
+                </div>
+                <div className="team-member">
+                    <div className="team-member-image">
+                        <img src={LotfiPhoto} alt="Lotfi Hamdine" />
+                    </div>
+                    <div className="team-member-name blg">
+                        <a href="https://linkedin.com/in/" target="_blank">
+                            {data.lotfi}
+                        </a>
+                    </div>
+                    <div className="team-member-role text">
+                        {data.designer}
+                    </div>
+                </div>
+                <div className="team-member">
+                    <div className="team-member-image">
+                        <img src={MehdiPhoto} alt="Mehdi Bendris" />
+                    </div>
+                    <div className="team-member-name blg">
+                        <a href="https://linkedin.com/in/" target="_blank">
+                            {data.mehdi}
+                        </a>
+                    </div>
+                    <div className="team-member-role text">
+                        {data.gs}
+                    </div>
+                </div>
+                <div className="team-member">
+                    <div className="team-member-image">
+                        <img src={OuaelPhoto} alt="Ouael Benamara" />
+                    </div>
+                    <div className="team-member-name blg">
+                        <a href="https://linkedin.com/in/" target="_blank">
+                            {data.ouael}
                         </a>
                     </div>
                     <div className="team-member-role text">
