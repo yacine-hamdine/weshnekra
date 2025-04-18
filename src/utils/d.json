@@ -1389,633 +1389,284 @@
     }
   ]
   
-  [
-    {
-      "id": "Q",
-      "Q": "I am passionate about mastering advanced commercial strategies and leadership skills.",
-      "fr": "Je suis passionné par la maîtrise des stratégies commerciales avancées et des compétences en leadership.",
-      "ar": "أنا شغوف بإتقان استراتيجيات التجارة المتقدمة ومهارات القيادة.",
-      "weights": {
-        "cmr-hgh": 5,
-        "stc-app": 0.5,
-        "cmr-std": 4,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 2,
-        "mng-sci": 4,
-        "fin-sci": 0.5,
-        "ecn-sci": 0.5,
-        "ecn-cmr": 2,
-        "fin-ctb": 0.5
+  {
+    "business_and_economics_questions": [
+      {
+        "Qen": "I enjoy studying supply and demand curves and their impact on markets.",
+        "Qfr": "J'aime étudier les courbes d'offre et de demande et leur impact sur les marchés.",
+        "Qar": "أستمتع بدراسة منحنيات العرض والطلب وتأثيرها على الأسواق.",
+        "weights": {
+          "cmr-sci": 2,
+          "fin-ctb": 1,
+          "mng-ecn": 3,
+          "fds-sci": 0,
+          "mng-sci": 1,
+          "ecn-sci": 5
+        }
+      },
+      {
+        "Qen": "I find bookkeeping and preparing financial statements interesting.",
+        "Qfr": "Je trouve la tenue de livres et la préparation des états financiers intéressantes.",
+        "Qar": "أجد مسك الدفاتر وإعداد البيانات المالية ممتعًا.",
+        "weights": {
+          "cmr-sci": 1,
+          "fin-ctb": 5,
+          "mng-ecn": 2,
+          "fds-sci": 0,
+          "mng-sci": 2,
+          "ecn-sci": 1
+        }
+      },
+      {
+        "Qen": "I like brainstorming marketing campaigns and designing promotional materials.",
+        "Qfr": "J'aime concevoir des campagnes marketing et élaborer des supports promotionnels.",
+        "Qar": "أحب التفكير في حملات التسويق وتصميم المواد الترويجية.",
+        "weights": {
+          "cmr-sci": 5,
+          "fin-ctb": 0,
+          "mng-ecn": 2,
+          "fds-sci": 0,
+          "mng-sci": 1,
+          "ecn-sci": 2
+        }
+      },
+      {
+        "Qen": "I often analyze company balance sheets to assess financial health.",
+        "Qfr": "J'analyse souvent les bilans des entreprises pour évaluer leur santé financière.",
+        "Qar": "أقوم غالبًا بتحليل البيانات المالية للشركات لتقييم صحتها المالية.",
+        "weights": {
+          "cmr-sci": 1,
+          "fin-ctb": 5,
+          "mng-ecn": 2,
+          "fds-sci": 0,
+          "mng-sci": 1,
+          "ecn-sci": 2
+        }
+      },
+      {
+        "Qen": "I am interested in how companies set prices and maximize profits.",
+        "Qfr": "Je m'intéresse à la façon dont les entreprises fixent les prix et maximisent leurs profits.",
+        "Qar": "أنا مهتم بكيفية قيام الشركات بتحديد الأسعار وتعظيم الأرباح.",
+        "weights": {
+          "cmr-sci": 2,
+          "fin-ctb": 1,
+          "mng-ecn": 5,
+          "fds-sci": 0,
+          "mng-sci": 2,
+          "ecn-sci": 3
+        }
+      },
+      {
+        "Qen": "I enjoy organizing group projects and leading teams to meet objectives.",
+        "Qfr": "J'aime organiser des projets de groupe et diriger des équipes pour atteindre des objectifs.",
+        "Qar": "أستمتع بتنظيم المشاريع الجماعية وقيادة الفرق لتحقيق الأهداف.",
+        "weights": {
+          "cmr-sci": 1,
+          "fin-ctb": 0,
+          "mng-ecn": 2,
+          "fds-sci": 0,
+          "mng-sci": 5,
+          "ecn-sci": 1
+        }
+      },
+      {
+        "Qen": "I like evaluating economic policies and their effects on society.",
+        "Qfr": "J'aime évaluer les politiques économiques et leurs effets sur la société.",
+        "Qar": "أحب تقييم السياسات الاقتصادية وتأثيرها على المجتمع.",
+        "weights": {
+          "cmr-sci": 1,
+          "fin-ctb": 0,
+          "mng-ecn": 3,
+          "fds-sci": 0,
+          "mng-sci": 1,
+          "ecn-sci": 5
+        }
+      },
+      {
+        "Qen": "I enjoy experimenting with recipes and understanding food preservation methods.",
+        "Qfr": "J'aime expérimenter des recettes et comprendre les méthodes de conservation des aliments.",
+        "Qar": "أستمتع بتجربة الوصفات وفهم طرق حفظ الأغذية.",
+        "weights": {
+          "cmr-sci": 0,
+          "fin-ctb": 0,
+          "mng-ecn": 1,
+          "fds-sci": 5,
+          "mng-sci": 1,
+          "ecn-sci": 0
+        }
+      },
+      {
+        "Qen": "I often track stock market indices and financial news.",
+        "Qfr": "Je suis souvent les indices boursiers et l'actualité financière.",
+        "Qar": "أتتبع غالبًا مؤشرات البورصة والأخبار المالية.",
+        "weights": {
+          "cmr-sci": 2,
+          "fin-ctb": 4,
+          "mng-ecn": 1,
+          "fds-sci": 0,
+          "mng-sci": 1,
+          "ecn-sci": 3
+        }
+      },
+      {
+        "Qen": "I like discussing case studies of successful businesses.",
+        "Qfr": "J'aime discuter des études de cas d'entreprises prospères.",
+        "Qar": "أحب مناقشة دراسات حالة للشركات الناجحة.",
+        "weights": {
+          "cmr-sci": 3,
+          "fin-ctb": 1,
+          "mng-ecn": 4,
+          "fds-sci": 0,
+          "mng-sci": 2,
+          "ecn-sci": 1
+        }
+      },
+      {
+        "Qen": "I enjoy calculating profit margins and cost analyses in class.",
+        "Qfr": "J'apprécie calculer les marges bénéficiaires et les analyses de coûts en cours.",
+        "Qar": "أستمتع بحساب هوامش الربح وتحليلات التكلفة في الصف.",
+        "weights": {
+          "cmr-sci": 1,
+          "fin-ctb": 4,
+          "mng-ecn": 2,
+          "fds-sci": 0,
+          "mng-sci": 1,
+          "ecn-sci": 2
+        }
+      },
+      {
+        "Qen": "I like negotiating prices when shopping or selling items online.",
+        "Qfr": "J'aime négocier les prix lors de mes achats ou de la vente d'articles en ligne.",
+        "Qar": "أحب التفاوض على الأسعار عند التسوق أو بيع الأشياء عبر الإنترنت.",
+        "weights": {
+          "cmr-sci": 5,
+          "fin-ctb": 1,
+          "mng-ecn": 2,
+          "fds-sci": 0,
+          "mng-sci": 1,
+          "ecn-sci": 1
+        }
+      },
+      {
+        "Qen": "I am interested in supply chain management and logistics.",
+        "Qfr": "Je m'intéresse à la gestion de la chaîne d'approvisionnement et à la logistique.",
+        "Qar": "أنا مهتم بإدارة سلسلة التوريد واللوجستيات.",
+        "weights": {
+          "cmr-sci": 2,
+          "fin-ctb": 0,
+          "mng-ecn": 4,
+          "fds-sci": 0,
+          "mng-sci": 3,
+          "ecn-sci": 1
+        }
+      },
+      {
+        "Qen": "I like budgeting my personal expenses and tracking my savings goals.",
+        "Qfr": "J'aime budgéter mes dépenses personnelles et suivre mes objectifs d'épargne.",
+        "Qar": "أحب وضع ميزانية لنفقاتي الشخصية وتتبع أهدافي في الادخار.",
+        "weights": {
+          "cmr-sci": 1,
+          "fin-ctb": 5,
+          "mng-ecn": 1,
+          "fds-sci": 0,
+          "mng-sci": 2,
+          "ecn-sci": 1
+        }
+      },
+      {
+        "Qen": "I enjoy reading business news magazines and financial journals.",
+        "Qfr": "J'aime lire des magazines économiques et des revues financières.",
+        "Qar": "أستمتع بقراءة المجلات التجارية والدوريات المالية.",
+        "weights": {
+          "cmr-sci": 2,
+          "fin-ctb": 2,
+          "mng-ecn": 2,
+          "fds-sci": 0,
+          "mng-sci": 1,
+          "ecn-sci": 3
+        }
+      },
+      {
+        "Qen": "I am passionate about optimization of processes and efficiency improvements.",
+        "Qfr": "Je suis passionné par l'optimisation des processus et l'amélioration de l'efficacité.",
+        "Qar": "أنا شغوف بتحسين العمليات وزيادة الكفاءة.",
+        "weights": {
+          "cmr-sci": 1,
+          "fin-ctb": 0,
+          "mng-ecn": 3,
+          "fds-sci": 0,
+          "mng-sci": 5,
+          "ecn-sci": 1
+        }
+      },
+      {
+        "Qen": "I like studying consumer behavior and market segmentation in class.",
+        "Qfr": "J'aime étudier le comportement des consommateurs et la segmentation du marché en cours.",
+        "Qar": "أحب دراسة سلوك المستهلكين وتقسيم السوق في الصف.",
+        "weights": {
+          "cmr-sci": 5,
+          "fin-ctb": 1,
+          "mng-ecn": 2,
+          "fds-sci": 0,
+          "mng-sci": 1,
+          "ecn-sci": 2
+        }
+      },
+      {
+        "Qen": "I enjoy analyzing food production processes and quality controls.",
+        "Qfr": "J'aime analyser les processus de production alimentaire et les contrôles qualité.",
+        "Qar": "أستمتع بتحليل عمليات إنتاج الأغذية ومراقبة الجودة.",
+        "weights": {
+          "cmr-sci": 0,
+          "fin-ctb": 0,
+          "mng-ecn": 1,
+          "fds-sci": 5,
+          "mng-sci": 2,
+          "ecn-sci": 0
+        }
+      },
+      {
+        "Qen": "I like creating business plans and financial forecasts for school projects.",
+        "Qfr": "J'aime créer des plans d'affaires et des prévisions financières pour les projets scolaires.",
+        "Qar": "أحب إعداد خطط الأعمال والتوقعات المالية للمشاريع المدرسية.",
+        "weights": {
+          "cmr-sci": 2,
+          "fin-ctb": 3,
+          "mng-ecn": 4,
+          "fds-sci": 0,
+          "mng-sci": 2,
+          "ecn-sci": 2
+        }
+      },
+      {
+        "Qen": "I often discuss macroeconomic trends and global markets with friends.",
+        "Qfr": "Je discute souvent des tendances macroéconomiques et des marchés mondiaux avec mes amis.",
+        "Qar": "أنا غالبًا ما أناقش الاتجاهات الاقتصادية الكلية والأسواق العالمية مع أصدقائي.",
+        "weights": {
+          "cmr-sci": 1,
+          "fin-ctb": 0,
+          "mng-ecn": 3,
+          "fds-sci": 0,
+          "mng-sci": 1,
+          "ecn-sci": 5
+        }
+      },
+      {
+        "Qen": "I like organizing events and managing budgets for school clubs.",
+        "Qfr": "J'aime organiser des événements et gérer les budgets des clubs scolaires.",
+        "Qar": "أحب تنظيم الفعاليات وإدارة الميزانيات لأندية المدرسة.",
+        "weights": {
+          "cmr-sci": 1,
+          "fin-ctb": 2,
+          "mng-ecn": 2,
+          "fds-sci": 0,
+          "mng-sci": 5,
+          "ecn-sci": 1
+        }
       }
-    },
-    {
-      "id": "Q",
-      "Q": "I am intrigued by the application of statistical methods to solve economic problems.",
-      "fr": "Je suis intrigué par l'application des méthodes statistiques pour résoudre des problèmes économiques.",
-      "ar": "أنا مفتون بتطبيق الأساليب الإحصائية لحل المشكلات الاقتصادية.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 4,
-        "fds-sci": 0.5,
-        "cmr-sci": 2,
-        "mng-sci": 0.5,
-        "fin-sci": 0.5,
-        "ecn-sci": 4,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am committed to understanding global commercial trends and market strategies.",
-      "fr": "Je suis déterminé à comprendre les tendances commerciales mondiales et les stratégies de marché.",
-      "ar": "أنا ملتزم بفهم الاتجاهات التجارية العالمية واستراتيجيات السوق.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 5,
-        "mng-sci": 4,
-        "fin-sci": 0.5,
-        "ecn-sci": 4,
-        "ecn-cmr": 5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am fascinated by financial accounting and the intricacies of corporate finance.",
-      "fr": "Je suis fasciné par la comptabilité financière et les subtilités de la finance d'entreprise.",
-      "ar": "أنا مفتون بالمحاسبة المالية وتعقيدات المالية الشركاتية.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 0.5,
-        "fin-sci": 5,
-        "ecn-sci": 0.5,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 4
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I have a strong interest in economic theory and its practical applications in society.",
-      "fr": "J'ai un fort intérêt pour la théorie économique et ses applications pratiques dans la société.",
-      "ar": "لدي اهتمام كبير بالنظرية الاقتصادية وتطبيقاتها العملية في المجتمع.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 2,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 0.5,
-        "fin-sci": 0.5,
-        "ecn-sci": 5,
-        "ecn-cmr": 4,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am excited about the opportunities offered by the digital economy and its impact on business management.",
-      "fr": "Je suis enthousiasmé par les opportunités offertes par l'économie numérique et son impact sur la gestion d'entreprise.",
-      "ar": "أنا متحمس للفرص التي يقدمها الاقتصاد الرقمي وتأثيره على إدارة الأعمال.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 4,
-        "fin-sci": 0.5,
-        "ecn-sci": 2,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am interested in developing management skills and strategic planning within traditional business environments.",
-      "fr": "Je suis intéressé par le développement de compétences en management et en planification stratégique dans des environnements commerciaux traditionnels.",
-      "ar": "أنا مهتم بتطوير مهارات الإدارة والتخطيط الاستراتيجي في البيئات التجارية التقليدية.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 5,
-        "mng-sch": 4,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 4,
-        "fin-sci": 0.5,
-        "ecn-sci": 2,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am eager to engage in academic research in management sciences and contribute to innovative business models.",
-      "fr": "Je suis impatient de m'engager dans la recherche académique en sciences de gestion et de contribuer à des modèles d'affaires innovants.",
-      "ar": "أنا متحمس للمشاركة في البحث الأكاديمي في علوم الإدارة والمساهمة في نماذج أعمال مبتكرة.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 5,
-        "fin-sci": 0.5,
-        "ecn-sci": 2,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am interested in managing large-scale construction projects and coordinating multidisciplinary teams.",
-      "fr": "Je suis intéressé par la gestion de projets de construction à grande échelle et la coordination d'équipes pluridisciplinaires.",
-      "ar": "أنا مهتم بإدارة مشاريع البناء الكبيرة وتنسيق الفرق متعددة التخصصات.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 4,
-        "fin-sci": 0.5,
-        "ecn-sci": 0.5,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I enjoy applying mathematical and computational tools to solve economic and management problems.",
-      "fr": "J'aime appliquer des outils mathématiques et informatiques pour résoudre des problèmes économiques et de gestion.",
-      "ar": "أنا أستمتع بتطبيق الأدوات الرياضية والحاسوبية لحل المشكلات الاقتصادية والإدارية.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 2,
-        "fin-sci": 0.5,
-        "ecn-sci": 4,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am interested in the economic aspects of food production and the business of food sciences.",
-      "fr": "Je m'intéresse aux aspects économiques de la production alimentaire et au secteur des sciences alimentaires.",
-      "ar": "أنا مهتم بالجوانب الاقتصادية لإنتاج الغذاء وقطاع علوم الأغذية.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 5,
-        "cmr-sci": 0.5,
-        "mng-sci": 2,
-        "fin-sci": 0.5,
-        "ecn-sci": 4,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I enjoy exploring the dynamics of commercial markets and consumer behavior.",
-      "fr": "J'aime explorer la dynamique des marchés commerciaux et le comportement des consommateurs.",
-      "ar": "أنا أستمتع باستكشاف ديناميكيات الأسواق التجارية وسلوك المستهلك.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 5,
-        "mng-sci": 4,
-        "fin-sci": 0.5,
-        "ecn-sci": 4,
-        "ecn-cmr": 5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am keen to develop new strategies in management to improve organizational performance.",
-      "fr": "Je suis désireux de développer de nouvelles stratégies en gestion pour améliorer la performance organisationnelle.",
-      "ar": "أنا حريص على تطوير استراتيجيات جديدة في الإدارة لتحسين الأداء التنظيمي.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 5,
-        "fin-sci": 0.5,
-        "ecn-sci": 2,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I aim to understand the intricate relationship between financial markets and accounting practices.",
-      "fr": "Je vise à comprendre la relation complexe entre les marchés financiers et les pratiques comptables.",
-      "ar": "أسعى لفهم العلاقة الدقيقة بين الأسواق المالية والممارسات المحاسبية.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 0.5,
-        "fin-sci": 5,
-        "ecn-sci": 2,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 4
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am passionate about applying economic theories to real-world business challenges.",
-      "fr": "Je suis passionné par l'application des théories économiques aux défis commerciaux réels.",
-      "ar": "أنا شغوف بتطبيق النظريات الاقتصادية على التحديات التجارية في العالم الواقعي.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 2,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 2,
-        "fin-sci": 0.5,
-        "ecn-sci": 5,
-        "ecn-cmr": 4,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am interested in the financial decision-making processes within large corporations.",
-      "fr": "Je m'intéresse aux processus de décision financière au sein des grandes entreprises.",
-      "ar": "أنا مهتم بعمليات اتخاذ القرار المالي داخل الشركات الكبرى.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 4,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 0.5,
-        "fin-sci": 5,
-        "ecn-sci": 0.5,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 4
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am excited about the potential of digital transformation in reshaping management practices.",
-      "fr": "Je suis enthousiaste quant au potentiel de la transformation numérique pour remodeler les pratiques de gestion.",
-      "ar": "أنا متحمس لإمكانيات التحول الرقمي في إعادة تشكيل ممارسات الإدارة.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 4,
-        "fin-sci": 0.5,
-        "ecn-sci": 2,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am eager to learn about innovative management practices that drive entrepreneurial success.",
-      "fr": "Je suis impatient d'en apprendre davantage sur les pratiques de gestion innovantes qui favorisent le succès entrepreneurial.",
-      "ar": "أنا متحمس لتعلم المزيد عن ممارسات الإدارة المبتكرة التي تدفع نجاح ريادة الأعمال.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 4,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 5,
-        "mng-sch": 4,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 4,
-        "mng-sci": 5,
-        "fin-sci": 0.5,
-        "ecn-sci": 2,
-        "ecn-cmr": 4,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I believe that strong management practices go hand in hand with sound financial principles.",
-      "fr": "Je crois que des pratiques de gestion solides vont de pair avec des principes financiers rigoureux.",
-      "ar": "أعتقد أن الممارسات الإدارية القوية تسير جنبًا إلى جنب مع المبادئ المالية السليمة.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 4,
-        "fin-sci": 4,
-        "ecn-sci": 2,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am fascinated by the impact of globalization on economic policies and business strategies.",
-      "fr": "Je suis fasciné par l'impact de la mondialisation sur les politiques économiques et les stratégies commerciales.",
-      "ar": "أنا مفتون بتأثير العولمة على السياسات الاقتصادية واستراتيجيات الأعمال.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 2,
-        "fin-sci": 0.5,
-        "ecn-sci": 5,
-        "ecn-cmr": 4,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am keen on developing innovative business strategies that drive competitive advantage.",
-      "fr": "Je suis désireux de développer des stratégies commerciales innovantes qui génèrent un avantage concurrentiel.",
-      "ar": "أنا حريص على تطوير استراتيجيات تجارية مبتكرة تدفع الميزة التنافسية.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 4,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 5,
-        "mng-sci": 4,
-        "fin-sci": 0.5,
-        "ecn-sci": 2,
-        "ecn-cmr": 4,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I value the integration of various disciplines, such as economics, finance, and management, to solve complex business challenges.",
-      "fr": "J'accorde de la valeur à l'intégration de diverses disciplines, telles que l'économie, la finance et la gestion, pour résoudre des défis commerciaux complexes.",
-      "ar": "أنا أُقدّر دمج مختلف التخصصات، مثل الاقتصاد والمالية والإدارة، لحل التحديات التجارية المعقدة.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 4,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 5,
-        "fin-sci": 0.5,
-        "ecn-sci": 2,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am interested in the formulation and impact of economic policies on national and global scales.",
-      "fr": "Je m'intéresse à la formulation et à l'impact des politiques économiques aux échelles nationale et mondiale.",
-      "ar": "أنا مهتم بصياغة وتأثير السياسات الاقتصادية على المستويين الوطني والعالمي.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 2,
-        "fin-sci": 0.5,
-        "ecn-sci": 5,
-        "ecn-cmr": 4,
-        "fin-ctb": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am passionate about studying risk management strategies within financial markets and corporate finance.",
-      "fr": "Je suis passionné par l'étude des stratégies de gestion des risques sur les marchés financiers et en finance d'entreprise.",
-      "ar": "أنا شغوف بدراسة استراتيجيات إدارة المخاطر ضمن الأسواق المالية والمالية الشركاتية.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 0.5,
-        "fds-sci": 0.5,
-        "cmr-sci": 0.5,
-        "mng-sci": 0.5,
-        "fin-sci": 4,
-        "ecn-sci": 2,
-        "ecn-cmr": 0.5,
-        "fin-ctb": 5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am driven to analyze economic data and trends to formulate effective business strategies.",
-      "fr": "Je suis motivé par l'analyse des données économiques et des tendances afin de formuler des stratégies commerciales efficaces.",
-      "ar": "أنا مدفوع بتحليل البيانات الاقتصادية والاتجاهات لصياغة استراتيجيات تجارية فعالة.",
-      "weights": {
-        "cmr-hgh": 0.5,
-        "stc-app": 0.5,
-        "cmr-std": 0.5,
-        "ctb-fnc": 0.5,
-        "ecn-std": 0.5,
-        "mng-num": 0.5,
-        "mng-std": 0.5,
-        "mng-sch": 0.5,
-        "bld-mng": 0.5,
-        "mth-ecn": 4,
-        "fds-sci": 0.5,
-        "cmr-sci": 2,
-        "mng-sci": 4,
-        "fin-sci": 0.5,
-        "ecn-sci": 5,
-        "ecn-cmr": 4,
-        "fin-ctb": 0.5
-      }
-    }
-  ]
+    ]
+  }
+  
 
   [
     {

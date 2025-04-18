@@ -44,83 +44,12 @@ async function mergeAndUploadQuiz() {
 
     // List of keys to extract from the English file for weights
     const weightKeys = [
-        "aer-sci",
-      "oto-sci",
-      "oto-mbl",
-      "ecl-env",
-      "elc-mcn",
-      "elm-mbl",
-      "eln-sci",
-      "eln-mbl",
-      "eln-ais",
-      "etn-sci",
-      "etn-rng",
-      "rng-phc",
-      "rng-tmc",
-      "rng-sci",
-      "cyb-sec",
-      "tcn-hgh",
-      "cmp-hgh",
-      "ais-hgh",
-      "num-hgh",
-      "mth-hgh",
-      "agr-hgh",
-      "frs-hgh",
-      "blg-hgh",
-      "fds-hgh",
-      "sag-hgh",
-      "btn-hgh",
-      "lsa-hgh",
-      "rng-hgh",
-      "plt-sci",
-      "hyd-hgh",
-      "nno-hgh",
-      "ots-hgh",
-      "atn-hgh",
-      "teg-hgh",
-      "pbw-hgh",
-      "plt-hgh",
-      "aps-hgh",
-      "elc-hgh",
-      "nds-ngr",
-      "bmd-ngr",
-      "cvl-ngr",
-      "prs-ngr",
-      "mrt-ngr",
-      "mcn-ngr",
-      "min-ngr",
-      "grp-sci",
-      "gly-sci",
-      "gph-sci",
-      "tcn-urb",
-      "ege-urb",
-      "cty-mng",
-      "hdl-sci",
-      "hdb-mnc",
-      "hdc-sci",
-      "hgs-nds",
-      "ptc-nds",
-      "cmp-sci",
-      "trs-ngr",
-      "bld-mng",
-      "mth-sci",
-      "mth-ecn",
-      "mtl-sci",
-      "opc-sci",
-      "phy-sci",
-      "agr-sci",
-      "fds-sci",
-      "mtr-sci",
-      "nal-sci",
-      "tcn-sci",
-      "ntr-sci",
-      "phy-tcn",
-      "phc-sci",
-      "tcn-cvn",
-      "tcn-prn",
-      "tcn-eln",
-      "tcn-mcn",
-      "tlc-sci"
+        "cmr-sci",
+        "fin-ctb",
+        "mng-ecn",
+        "fds-sci",
+        "mng-sci",
+        "ecn-sci"
     ];
 
     // Loop through each question and build the merged object
@@ -147,9 +76,9 @@ async function mergeAndUploadQuiz() {
 
       mergedQuestions.push(mergedQuestion);
     }
-
+    console.log(mergedQuestions);
     // Upload the merged data into Firestore
-    await setDoc(doc(db, "quizzes", "xct-sci"), { questions: mergedQuestions });
+    await setDoc(doc(db, "quizzes", "ecn-bsn"), { questions: mergedQuestions });
     console.log("Quiz questions uploaded successfully.");
   } catch (error) {
     console.error("Error during merging and uploading:", error);
