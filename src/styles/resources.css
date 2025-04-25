@@ -1,0 +1,31 @@
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 300px;
+    height: 225px;
+}
+.category > div{
+    width: 100%;
+}
+
+.category img{
+    width: 100%;
+    max-width: 50px;
+    margin-bottom: 10px;
+}

@@ -76,6 +76,11 @@ function Menu() {
           {data?.results}
         </span>
       </Link>
+      <Link to="/resources">
+        <span className="text link">
+          {data?.resources}
+        </span>
+      </Link>
       <Link to="/about">
         <span className="text link">
           {data?.about}

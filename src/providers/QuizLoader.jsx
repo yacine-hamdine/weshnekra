@@ -27,7 +27,7 @@ const getFromIndexedDB = async (quizType) => {
 export const fetchQuestions = async (db, quizType) => {
   const cachedData = await getFromIndexedDB(quizType);
   if (cachedData && Date.now() - cachedData.timestamp < 86400000) {
-    console.log("Loaded from IndexedDB");
+    console.log("Loaded quiz from IndexedDB");
     return cachedData.questions;
   }
 
@@ -37,7 +37,7 @@ export const fetchQuestions = async (db, quizType) => {
   if (docSnap.exists()) {
     const questions = docSnap.data().questions;
     await saveToIndexedDB(quizType, questions);
-    console.log("Loaded from Firestore");
+    console.log("Loaded quiz from Firestore");
     return questions;
   } else {
     console.error("No quiz data found!");

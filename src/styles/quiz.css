@@ -194,7 +194,7 @@ progress::-webkit-progress-value{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
@@ -233,19 +233,11 @@ progress::-webkit-progress-value{
     font-size: .7rem;
 }
 
-.quiz-card-question{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .quiz-card-question-content{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    min-height: 100px;
 }
 
 .quiz-widget{
@@ -377,11 +369,13 @@ progress::-webkit-progress-value{
     }
 
     .quiz-card-question{
+        min-height: 360px;
         gap: 20px;
     }
 
     .quiz-widget{
-        gap: 60px;
+        height: calc(100vh - 200px);
+        gap: 10px;
     }
 
     .main-ctrl{
@@ -406,6 +400,8 @@ progress::-webkit-progress-value{
     }
 
     .quiz-content{
-        height: 260px;
+        
+        overflow-y: auto;
+        flex: 1;
     }
 }

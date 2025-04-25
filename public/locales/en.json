@@ -15,7 +15,8 @@
     "mehdi": "Mehdi Bendris",
     "ouael": "Ouael Benamara",
     "about": "About",
-    "infos": "WeshNekra is a solution that helps students choose their higher academic studies path throught a categorized and specialized quiz. It is a project developed on 2025 by a group of students in Algiers, Algeria.",
+    "resources": "Resources",
+    "infos": "WeshNekra is a solution that helps students choose their higher academic studies path throught a categorized and specialized quiz. It is a project developed on 2025 by a group of students (KVGroup) in Algiers, Algeria.",
     "copyright": "All rights reserved",
 
     "heroTitle": "Determine Your Acedemic Path With Ease",
@@ -234,6 +235,10 @@
     "missionTitle": "Our Mission",
     "missionText": "Kaiten Vokse Groupe (KVGroup) is an Algerian IT consulting and services company specializing in digital innovation and digital transformation. Among its initiatives, WeshNekra stands out as an innovative platform helping students choose their academic path through data analysis and personalized recommendations. By combining technological expertise and innovation, KVGroupe aims to revolutionize the digital landscape and support new generations towards success in a constantly evolving world.",                                    
     "teamTitle": "Our Team",
-    "teamText": "We are a group of students in Algiers, Algeria."
+    "teamText": "We are a group of students in Algiers, Algeria.",
 
+    "resourcesTitle": "Resources",
+    "resourcesText": "Explore our resources to deepen your knowledge on studies fields/specialities categories in Algeria, where more educational resources will be added in the future.",
+    "resourcesCategories": "Categories",
+    "viewResources": "View"
 }
