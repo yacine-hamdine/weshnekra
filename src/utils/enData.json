@@ -1,296 +1,727 @@
 [
-    {
-      "id": "Q",
-      "Q": "I enjoy studying supply and demand curves and their impact on markets.",
-      "fr": "J'aime étudier les courbes d'offre et de demande et leur impact sur les marchés.",
-      "ar": "أستمتع بدراسة منحنيات العرض والطلب وتأثيرها على الأسواق.",
-      "weights": {
-        "cmr-sci": 2,
-        "fin-ctb": 1,
-        "mng-ecn": 3,
-        "fds-sci": 0.5,
-        "mng-sci": 1,
-        "ecn-sci": 5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I find bookkeeping and preparing financial statements interesting.",
-      "fr": "Je trouve la tenue de livres et la préparation des états financiers intéressantes.",
-      "ar": "أجد مسك الدفاتر وإعداد البيانات المالية ممتعًا.",
-      "weights": {
-        "cmr-sci": 1,
-        "fin-ctb": 5,
-        "mng-ecn": 2,
-        "fds-sci": 0.5,
-        "mng-sci": 2,
-        "ecn-sci": 1
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I like brainstorming marketing campaigns and designing promotional materials.",
-      "fr": "J'aime concevoir des campagnes marketing et élaborer des supports promotionnels.",
-      "ar": "أحب التفكير في حملات التسويق وتصميم المواد الترويجية.",
-      "weights": {
-        "cmr-sci": 5,
-        "fin-ctb": 0.5,
-        "mng-ecn": 2,
-        "fds-sci": 0.5,
-        "mng-sci": 1,
-        "ecn-sci": 2
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I often analyze company balance sheets to assess financial health.",
-      "fr": "J'analyse souvent les bilans des entreprises pour évaluer leur santé financière.",
-      "ar": "أقوم غالبًا بتحليل البيانات المالية للشركات لتقييم صحتها المالية.",
-      "weights": {
-        "cmr-sci": 1,
-        "fin-ctb": 5,
-        "mng-ecn": 2,
-        "fds-sci": 0.5,
-        "mng-sci": 1,
-        "ecn-sci": 2
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am interested in how companies set prices and maximize profits.",
-      "fr": "Je m'intéresse à la façon dont les entreprises fixent les prix et maximisent leurs profits.",
-      "ar": "أنا مهتم بكيفية قيام الشركات بتحديد الأسعار وتعظيم الأرباح.",
-      "weights": {
-        "cmr-sci": 2,
-        "fin-ctb": 1,
-        "mng-ecn": 5,
-        "fds-sci": 0.5,
-        "mng-sci": 2,
-        "ecn-sci": 3
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I enjoy organizing group projects and leading teams to meet objectives.",
-      "fr": "J'aime organiser des projets de groupe et diriger des équipes pour atteindre des objectifs.",
-      "ar": "أستمتع بتنظيم المشاريع الجماعية وقيادة الفرق لتحقيق الأهداف.",
-      "weights": {
-        "cmr-sci": 1,
-        "fin-ctb": 0.5,
-        "mng-ecn": 2,
-        "fds-sci": 0.5,
-        "mng-sci": 5,
-        "ecn-sci": 1
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I like evaluating economic policies and their effects on society.",
-      "fr": "J'aime évaluer les politiques économiques et leurs effets sur la société.",
-      "ar": "أحب تقييم السياسات الاقتصادية وتأثيرها على المجتمع.",
-      "weights": {
-        "cmr-sci": 1,
-        "fin-ctb": 0.5,
-        "mng-ecn": 3,
-        "fds-sci": 0.5,
-        "mng-sci": 1,
-        "ecn-sci": 5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I enjoy experimenting with recipes and understanding food preservation methods.",
-      "fr": "J'aime expérimenter des recettes et comprendre les méthodes de conservation des aliments.",
-      "ar": "أستمتع بتجربة الوصفات وفهم طرق حفظ الأغذية.",
-      "weights": {
-        "cmr-sci": 0.5,
-        "fin-ctb": 0.5,
-        "mng-ecn": 1,
-        "fds-sci": 5,
-        "mng-sci": 1,
-        "ecn-sci": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I often track stock market indices and financial news.",
-      "fr": "Je suis souvent les indices boursiers et l'actualité financière.",
-      "ar": "أتتبع غالبًا مؤشرات البورصة والأخبار المالية.",
-      "weights": {
-        "cmr-sci": 2,
-        "fin-ctb": 4,
-        "mng-ecn": 1,
-        "fds-sci": 0.5,
-        "mng-sci": 1,
-        "ecn-sci": 3
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I like discussing case studies of successful businesses.",
-      "fr": "J'aime discuter des études de cas d'entreprises prospères.",
-      "ar": "أحب مناقشة دراسات حالة للشركات الناجحة.",
-      "weights": {
-        "cmr-sci": 3,
-        "fin-ctb": 1,
-        "mng-ecn": 4,
-        "fds-sci": 0.5,
-        "mng-sci": 2,
-        "ecn-sci": 1
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I enjoy calculating profit margins and cost analyses in class.",
-      "fr": "J'apprécie calculer les marges bénéficiaires et les analyses de coûts en cours.",
-      "ar": "أستمتع بحساب هوامش الربح وتحليلات التكلفة في الصف.",
-      "weights": {
-        "cmr-sci": 1,
-        "fin-ctb": 4,
-        "mng-ecn": 2,
-        "fds-sci": 0.5,
-        "mng-sci": 1,
-        "ecn-sci": 2
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I like negotiating prices when shopping or selling items online.",
-      "fr": "J'aime négocier les prix lors de mes achats ou de la vente d'articles en ligne.",
-      "ar": "أحب التفاوض على الأسعار عند التسوق أو بيع الأشياء عبر الإنترنت.",
-      "weights": {
-        "cmr-sci": 5,
-        "fin-ctb": 1,
-        "mng-ecn": 2,
-        "fds-sci": 0.5,
-        "mng-sci": 1,
-        "ecn-sci": 1
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am interested in supply chain management and logistics.",
-      "fr": "Je m'intéresse à la gestion de la chaîne d'approvisionnement et à la logistique.",
-      "ar": "أنا مهتم بإدارة سلسلة التوريد واللوجستيات.",
-      "weights": {
-        "cmr-sci": 2,
-        "fin-ctb": 0.5,
-        "mng-ecn": 4,
-        "fds-sci": 0.5,
-        "mng-sci": 3,
-        "ecn-sci": 1
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I like budgeting my personal expenses and tracking my savings goals.",
-      "fr": "J'aime budgéter mes dépenses personnelles et suivre mes objectifs d'épargne.",
-      "ar": "أحب وضع ميزانية لنفقاتي الشخصية وتتبع أهدافي في الادخار.",
-      "weights": {
-        "cmr-sci": 1,
-        "fin-ctb": 5,
-        "mng-ecn": 1,
-        "fds-sci": 0.5,
-        "mng-sci": 2,
-        "ecn-sci": 1
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I enjoy reading business news magazines and financial journals.",
-      "fr": "J'aime lire des magazines économiques et des revues financières.",
-      "ar": "أستمتع بقراءة المجلات التجارية والدوريات المالية.",
-      "weights": {
-        "cmr-sci": 2,
-        "fin-ctb": 2,
-        "mng-ecn": 2,
-        "fds-sci": 0.5,
-        "mng-sci": 1,
-        "ecn-sci": 3
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I am passionate about optimization of processes and efficiency improvements.",
-      "fr": "Je suis passionné par l'optimisation des processus et l'amélioration de l'efficacité.",
-      "ar": "أنا شغوف بتحسين العمليات وزيادة الكفاءة.",
-      "weights": {
-        "cmr-sci": 1,
-        "fin-ctb": 0.5,
-        "mng-ecn": 3,
-        "fds-sci": 0.5,
-        "mng-sci": 5,
-        "ecn-sci": 1
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I like studying consumer behavior and market segmentation in class.",
-      "fr": "J'aime étudier le comportement des consommateurs et la segmentation du marché en cours.",
-      "ar": "أحب دراسة سلوك المستهلكين وتقسيم السوق في الصف.",
-      "weights": {
-        "cmr-sci": 5,
-        "fin-ctb": 1,
-        "mng-ecn": 2,
-        "fds-sci": 0.5,
-        "mng-sci": 1,
-        "ecn-sci": 2
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I enjoy analyzing food production processes and quality controls.",
-      "fr": "J'aime analyser les processus de production alimentaire et les contrôles qualité.",
-      "ar": "أستمتع بتحليل عمليات إنتاج الأغذية ومراقبة الجودة.",
-      "weights": {
-        "cmr-sci": 0.5,
-        "fin-ctb": 0.5,
-        "mng-ecn": 1,
-        "fds-sci": 5,
-        "mng-sci": 2,
-        "ecn-sci": 0.5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I like creating business plans and financial forecasts for school projects.",
-      "fr": "J'aime créer des plans d'affaires et des prévisions financières pour les projets scolaires.",
-      "ar": "أحب إعداد خطط الأعمال والتوقعات المالية للمشاريع المدرسية.",
-      "weights": {
-        "cmr-sci": 2,
-        "fin-ctb": 3,
-        "mng-ecn": 4,
-        "fds-sci": 0.5,
-        "mng-sci": 2,
-        "ecn-sci": 2
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I often discuss macroeconomic trends and global markets with friends.",
-      "fr": "Je discute souvent des tendances macroéconomiques et des marchés mondiaux avec mes amis.",
-      "ar": "أنا غالبًا ما أناقش الاتجاهات الاقتصادية الكلية والأسواق العالمية مع أصدقائي.",
-      "weights": {
-        "cmr-sci": 1,
-        "fin-ctb": 0.5,
-        "mng-ecn": 3,
-        "fds-sci": 0.5,
-        "mng-sci": 1,
-        "ecn-sci": 5
-      }
-    },
-    {
-      "id": "Q",
-      "Q": "I like organizing events and managing budgets for school clubs.",
-      "fr": "J'aime organiser des événements et gérer les budgets des clubs scolaires.",
-      "ar": "أحب تنظيم الفعاليات وإدارة الميزانيات لأندية المدرسة.",
-      "weights": {
-        "cmr-sci": 1,
-        "fin-ctb": 2,
-        "mng-ecn": 2,
-        "fds-sci": 0.5,
-        "mng-sci": 5,
-        "ecn-sci": 1
-      }
+  {
+    "id": "Q",
+    "Q": "I enjoy going on field trips to study soil layers, rock formations, and landscapes.",
+    "Qfr": "J'aime participer à des sorties terrain pour étudier les couches de sol, les formations rocheuses et les paysages.",
+    "Qar": "أستمتع بالرحلات الميدانية لدراسة طبقات التربة وتكوينات الصخور والمناظر الطبيعية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 5, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 0
     }
+  },
+  {
+    "id": "Q",
+    "Q": "I like using GIS and remote sensing tools to map land use and environmental changes.",
+    "Qfr": "J'aime utiliser des outils SIG et de télédétection pour cartographier l'occupation des sols et les changements environnementaux.",
+    "Qar": "أحب استخدام نظم المعلومات الجغرافية وأدوات الاستشعار عن بعد لرسم خرائط استخدام الأراضي والتغيرات البيئية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 5, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I am fascinated by climate modeling and predicting environmental impacts.",
+    "Qfr": "Je suis fasciné par la modélisation climatique et la prévision des impacts environnementaux.",
+    "Qar": "أنا مفتون بنمذجة المناخ وتوقع التأثيرات البيئية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 5, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy writing scripts to analyze large environmental datasets.",
+    "Qfr": "J'aime écrire des scripts pour analyser de grands ensembles de données environnementales.",
+    "Qar": "أستمتع بكتابة نصوص برمجية لتحليل مجموعات بيانات بيئية كبيرة.",
+    "weights": {
+      "cmp-ias": 2, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 4, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like evaluating sites for solar or wind farms based on environmental surveys.",
+    "Qfr": "J'aime évaluer des sites pour des fermes solaires ou éoliennes en fonction d'enquêtes environnementales.",
+    "Qar": "أحب تقييم مواقع مزارع الطاقة الشمسية أو الريحية بناءً على المسوحات البيئية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 1, "ren-eng": 3,
+      "fnd-sci": 0, "ert-env": 3, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy experimenting with crop rotation and soil fertility techniques in school projects.",
+    "Qfr": "J'aime expérimenter la rotation des cultures et les techniques de fertilité du sol dans les projets scolaires.",
+    "Qar": "أستمتع بتجربة تناوب المحاصيل وتقنيات خصوبة التربة في المشاريع المدرسية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 5, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like developing new food processing methods in the lab and testing nutrition outcomes.",
+    "Qfr": "J'aime développer de nouvelles méthodes de transformation alimentaire au laboratoire et tester les résultats nutritionnels.",
+    "Qar": "أحب تطوير طرق جديدة لمعالجة الغذاء في المختبر واختبار نتائج التغذية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 5, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I am fascinated by designing bioreactors for fermentation and biotechnology applications.",
+    "Qfr": "Je suis fasciné par la conception de bioréacteurs pour les applications de fermentation et de biotechnologie.",
+    "Qar": "أنا مفتون بتصميم المفاعلات الحيوية لتطبيقات التخمير والتكنولوجيا الحيوية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 5, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like analyzing enzyme kinetics and biochemical pathways.",
+    "Qfr": "J'aime analyser la cinétique des enzymes et les voies biochimiques.",
+    "Qar": "أحب تحليل حركية الإنزيمات والمسارات البيوكيميائية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 4, "smt-phc": 2,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy designing sustainable agricultural equipment and farm machinery.",
+    "Qfr": "J'aime concevoir du matériel agricole et des machines de ferme durables.",
+    "Qar": "أستمتع بتصميم معدات زراعية وآلات مزرعية مستدامة.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 2, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 3, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy synthesizing new materials and testing their mechanical and chemical properties.",
+    "Qfr": "J'aime synthétiser de nouveaux matériaux et tester leurs propriétés mécaniques et chimiques.",
+    "Qar": "أستمتع بتخليق مواد جديدة واختبار خصائصها الميكانيكية والكيميائية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 5,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like using spectroscopy and electron microscopy to characterize substances.",
+    "Qfr": "J'aime utiliser la spectroscopie et la microscopie électronique pour caractériser les substances.",
+    "Qar": "أحب استخدام التحليل الطيفي والمجهر الإلكتروني لوصف المواد.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 5,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I am fascinated by reaction kinetics and thermodynamics experiments.",
+    "Qfr": "Je suis fasciné par les expériences de cinétique des réactions et de thermodynamique.",
+    "Qar": "أنا مفتون بتجارب حركية التفاعلات والديناميكا الحرارية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 5,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy researching nanomaterials for efficient energy conversion.",
+    "Qfr": "J'aime étudier les nanomatériaux pour une conversion d'énergie efficace.",
+    "Qar": "أستمتع بدراسة المواد النانوية من أجل تحويل الطاقة بكفاءة.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 2,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 4,
+      "hyd-urb": 0, "oth-sci": 1
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like designing composite materials for structural and mechanical applications.",
+    "Qfr": "J'aime concevoir des matériaux composites pour des applications structurelles et mécaniques.",
+    "Qar": "أحب تصميم المواد المركبة للتطبيقات الهيكلية والميكانيكية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 2, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 3,
+      "hyd-urb": 0, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy designing and analyzing city water distribution and sewer networks.",
+    "Qfr": "J'aime concevoir et analyser les réseaux de distribution d'eau et d'égouts en milieu urbain.",
+    "Qar": "أستمتع بتصميم وتحليل شبكات توزيع المياه وصرف الصرف الصحي في المدن.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 5, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like modeling flood dynamics and river engineering solutions.",
+    "Qfr": "J'aime modéliser la dynamique des inondations et des solutions d'ingénierie fluviale.",
+    "Qar": "أحب نمذجة ديناميكا الفيضانات وحلول هندسة الأنهار.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 5, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I am fascinated by wastewater treatment design and urban drainage systems.",
+    "Qfr": "Je suis fasciné par la conception des stations d'épuration et des systèmes de drainage urbain.",
+    "Qar": "أنا مفتون بتصميم محطات معالجة مياه الصرف وأنظمة الصرف الصحي الحضرية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 5, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like integrating turbines and pumps for small-scale hydroelectric plants.",
+    "Qfr": "J'aime intégrer des turbines et des pompes pour les petites centrales hydroélectriques.",
+    "Qar": "أحب دمج التوربينات والمضخات للمحطات الكهرومائية صغيرة الحجم.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 3,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 3, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy using GIS to map urban infrastructure and plan smart cities.",
+    "Qfr": "J'aime utiliser les SIG pour cartographier l'infrastructure urbaine et planifier des villes intelligentes.",
+    "Qar": "أستمتع باستخدام نظم المعلومات الجغرافية لرسم خرائط البنية التحتية الحضرية وتخطيط المدن الذكية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 2, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 3, "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy studying nanoscale materials and nanofabrication processes.",
+    "Qfr": "J'aime étudier les matériaux à l'échelle nanométrique et les processus de nanofabrication.",
+    "Qar": "أستمتع بدراسة المواد على المستوى النانوي وعمليات تصنيع النانو.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 5
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like exploring marine biology and coastal ecosystem management.",
+    "Qfr": "J'aime explorer la biologie marine et la gestion des écosystèmes côtiers.",
+    "Qar": "أحب استكشاف علم الأحياء البحرية وإدارة النظم البيئية الساحلية.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 5
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I am fascinated by industrial hygiene, safety audits, and risk assessments.",
+    "Qfr": "Je suis fasciné par l'hygiène industrielle, les audits de sécurité et les évaluations des risques.",
+    "Qar": "أنا مفتون بالصحة الصناعية وتدقيقات السلامة وتقييمات المخاطر.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 5
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy designing sensor networks for smart city monitoring and data collection.",
+    "Qfr": "J'aime concevoir des réseaux de capteurs pour la surveillance des villes intelligentes et la collecte de données.",
+    "Qar": "أستمتع بتصميم شبكات أجهزة الاستشعار لمراقبة المدن الذكية وجمع البيانات.",
+    "weights": {
+      "cmp-ias": 2, "elc-oto": 0, "gen-eng": 0, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 2, "oth-sci": 3
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like developing robotic systems for underwater exploration and maintenance.",
+    "Qfr": "J'aime développer des systèmes robotiques pour l'exploration et la maintenance sous-marine.",
+    "Qar": "أحب تطوير الأنظمة الروبوتية للاستكشاف والصيانة تحت الماء.",
+    "weights": {
+      "cmp-ias": 0, "elc-oto": 2, "gen-eng": 1, "ren-eng": 0,
+      "fnd-sci": 0, "ert-env": 0, "agr-abt": 0, "smt-phc": 0,
+      "hyd-urb": 0, "oth-sci": 3
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy writing and debugging code in my free time.",
+    "Qfr": "J'aime écrire et déboguer du code pendant mon temps libre.",
+    "Qar": "أستمتع بكتابة وتصحيح الشفرات في وقت فراغي.",
+    "weights": {
+      "cmp-ias": 5,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I am fascinated by neural network architectures and deep learning.",
+    "Qfr": "Je suis fasciné par les architectures de réseaux de neurones et l’apprentissage profond.",
+    "Qar": "أنا مفتون بهياكل الشبكات العصبية والتعليم العميق.",
+    "weights": {
+      "cmp-ias": 5,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like participating in hacking competitions and coding challenges.",
+    "Qfr": "J'aime participer à des compétitions de hacking et des défis de codage.",
+    "Qar": "أحب المشاركة في مسابقات الهاكينج وتحديات البرمجة.",
+    "weights": {
+      "cmp-ias": 5,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy optimizing algorithms and analyzing their mathematical complexity.",
+    "Qfr": "J'aime optimiser des algorithmes et analyser leur complexité mathématique.",
+    "Qar": "أستمتع بتحسين الخوارزميات وتحليل تعقيدها الرياضي.",
+    "weights": {
+      "cmp-ias": 4,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 3,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like programming microcontrollers and embedded systems.",
+    "Qfr": "J'aime programmer des microcontrôleurs et des systèmes embarqués.",
+    "Qar": "أحب برمجة المتحكمات الدقيقة وأنظمة المضمنة.",
+    "weights": {
+      "cmp-ias": 3,
+      "elc-oto": 2,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy building and soldering electronic circuits on a breadboard.",
+    "Qfr": "J'aime monter et souder des circuits électroniques sur une plaque d'essai.",
+    "Qar": "أستمتع بتجميع ولحام الدوائر الإلكترونية على لوحة تجارب.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 5,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like programming PLCs and designing automated control sequences.",
+    "Qfr": "J'aime programmer des automates programmables et concevoir des séquences de contrôle automatisé.",
+    "Qar": "أحب برمجة المتحكمات المنطقية القابلة للبرمجة وتصميم تسلسلات التحكم الآلي.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 5,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy analyzing electric motor performance and control strategies.",
+    "Qfr": "J'aime analyser la performance des moteurs électriques et les stratégies de contrôle.",
+    "Qar": "أستمتع بتحليل أداء المحركات الكهربائية واستراتيجيات التحكم.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 5,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like integrating solar panels with power electronics converters.",
+    "Qfr": "J'aime intégrer des panneaux solaires avec des convertisseurs d'électronique de puissance.",
+    "Qar": "أحب دمج الألواح الشمسية مع محولات الطاقة الإلكترونية.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 4,
+      "ren-eng": 3,
+      "gen-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy designing circuits for robotics and mechanical systems.",
+    "Qfr": "J'aime concevoir des circuits pour la robotique et les systèmes mécaniques.",
+    "Qar": "أستمتع بتصميم الدوائر للروبوتات والأنظمة الميكانيكية.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 3,
+      "gen-eng": 2,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy sketching and simulating mechanical parts in CAD software.",
+    "Qfr": "J'aime esquisser et simuler des pièces mécaniques dans un logiciel CAD.",
+    "Qar": "أستمتع برسم أجزاء ميكانيكية ومحاكاتها في برامج التصميم بمساعدة الحاسوب.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 5,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like planning and supervising construction or manufacturing projects.",
+    "Qfr": "J'aime planifier et superviser des projets de construction ou de fabrication.",
+    "Qar": "أحب تخطيط والإشراف على مشاريع البناء أو التصنيع.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 5,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy studying fluid dynamics and structural analysis.",
+    "Qfr": "J'aime étudier la dynamique des fluides et l'analyse structurelle.",
+    "Qar": "أستمتع بدراسة ديناميكا السوائل والتحليل الهيكلي.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 5,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like optimizing energy consumption in mechanical and electrical installations.",
+    "Qfr": "J'aime optimiser la consommation d'énergie dans les installations mécaniques et électriques.",
+    "Qar": "أحب تحسين استهلاك الطاقة في التركيبات الميكانيكية والكهربائية.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 2,
+      "gen-eng": 3,
+      "ren-eng": 3,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy troubleshooting hydraulic systems in urban infrastructure.",
+    "Qfr": "J'aime dépanner les systèmes hydrauliques dans l'infrastructure urbaine.",
+    "Qar": "أستمتع باستكشاف أنظمة الهيدروليك في البنية التحتية الحضرية.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 2,
+      "hyd-urb": 3,
+      "ren-eng": 0,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy designing photovoltaic systems and solar trackers.",
+    "Qfr": "J'aime concevoir des systèmes photovoltaïques et des suiveurs solaires.",
+    "Qar": "أستمتع بتصميم أنظمة الطاقة الشمسية والمتعقبات الشمسية.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 5,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like modeling wind turbine aerodynamics and power output.",
+    "Qfr": "J'aime modéliser l'aérodynamique des éoliennes et leur production d'énergie.",
+    "Qar": "أحب نمذجة ديناميكا الهواء للتوربينات الهوائية وإنتاجها من الطاقة.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 5,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy analyzing thermal solar plant efficiency and heat transfer.",
+    "Qfr": "J'aime analyser l'efficacité des centrales solaires thermiques et le transfert de chaleur.",
+    "Qar": "أستمتع بتحليل كفاءة محطات الطاقة الشمسية الحرارية وانتقال الحرارة.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 5,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like integrating renewable energy into urban water and heating systems.",
+    "Qfr": "J'aime intégrer les énergies renouvelables dans les systèmes urbains d'eau et de chauffage.",
+    "Qar": "أحب دمج مصادر الطاقة المتجددة في أنظمة المياه والتدفئة الحضرية.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 4,
+      "hyd-urb": 3,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy studying material properties for efficient energy conversion.",
+    "Qfr": "J'aime étudier les propriétés des matériaux pour une conversion d'énergie efficace.",
+    "Qar": "أستمتع بدراسة خصائص المواد من أجل تحويل الطاقة بكفاءة.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 3,
+      "smt-phc": 2,
+      "fnd-sci": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy proving mathematical theorems and solving abstract problems.",
+    "Qfr": "J'aime démontrer des théorèmes mathématiques et résoudre des problèmes abstraits.",
+    "Qar": "أستمتع بإثبات النظريات الرياضية وحل المشكلات المجردة.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 5,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like conducting physics experiments to understand fundamental forces.",
+    "Qfr": "J'aime réaliser des expériences de physique pour comprendre les forces fondamentales.",
+    "Qar": "أحب إجراء تجارب فيزيائية لفهم القوى الأساسية.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 5,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy studying differential equations and their real-world applications.",
+    "Qfr": "J'aime étudier les équations différentielles et leurs applications concrètes.",
+    "Qar": "أستمتع بدراسة المعادلات التفاضلية وتطبيقاتها العملية.",
+    "weights": {
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 5,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I like applying linear algebra in computer graphics and simulations.",
+    "Qfr": "J'aime appliquer l'algèbre linéaire en infographie et en simulations.",
+    "Qar": "أحب تطبيق الجبر الخطي في الرسومات الحاسوبية والمحاكاة.",
+    "weights": {
+      "cmp-ias": 2,
+      "elc-oto": 0,
+      "gen-eng": 0,
+      "ren-eng": 0,
+      "fnd-sci": 4,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "hyd-urb": 0,
+      "oth-sci": 0
+    }
+  },
+  {
+    "id": "Q",
+    "Q": "I enjoy using calculus to model natural phenomena like fluid flow.",
+    "Qfr": "J'aime utiliser le calcul différentiel pour modéliser des phénomènes naturels comme l'écoulement des fluides.",
+    "Qar": "أستمتع باستخدام التفاضل والتكامل لنمذجة الظواهر الطبيعية مثل تدفق السوائل.",
+    "weights": {
+      "gen-eng": 2,
+      "ren-eng": 0,
+      "fnd-sci": 4,
+      "hyd-urb": 2,
+      "cmp-ias": 0,
+      "elc-oto": 0,
+      "ert-env": 0,
+      "agr-abt": 0,
+      "smt-phc": 0,
+      "oth-sci": 0
+    }
+  }
 ]

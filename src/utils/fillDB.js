@@ -44,12 +44,9 @@ async function mergeAndUploadQuiz() {
 
     // List of keys to extract from the English file for weights
     const weightKeys = [
-        "cmr-sci",
-        "fin-ctb",
-        "mng-ecn",
-        "fds-sci",
-        "mng-sci",
-        "ecn-sci"
+        "cmp-ias", "elc-oto", "gen-eng", "ren-eng",
+      "fnd-sci", "ert-env", "agr-abt", "smt-phc",
+      "hyd-urb", "oth-sci"
     ];
 
     // Loop through each question and build the merged object
@@ -78,7 +75,7 @@ async function mergeAndUploadQuiz() {
     }
     console.log(mergedQuestions);
     // Upload the merged data into Firestore
-    await setDoc(doc(db, "quizzes", "ecn-bsn"), { questions: mergedQuestions });
+    await setDoc(doc(db, "quizzes", "xct-sci"), { questions: mergedQuestions });
     console.log("Quiz questions uploaded successfully.");
   } catch (error) {
     console.error("Error during merging and uploading:", error);
