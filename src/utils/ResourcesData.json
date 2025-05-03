@@ -1,0 +1,192 @@
+{
+ "spr-edu": [
+   {
+    "en": "Higher Normal School of Béchar",
+    "fr": "École Normale Supérieure de Béchar",
+    "ar": "المدرسة العليا للأساتذة ببشار",
+    "url": "https://www.ens-bechar.dz/school/"
+  },
+  {
+    "en": "Higher Normal School of Laghouat",
+    "fr": "École Normale Supérieure de Laghouat",
+    "ar": "المدرسة العليا للأساتذة بالأغواط",
+    "url": "https://www.ens-lagh.dz/"
+  },
+  {
+    "en": "Higher Normal School of Bouzaréah",
+    "fr": "École Normale Supérieure de Bouzaréah",
+    "ar": "المدرسة العليا للأساتذة ببوزريعة",
+    "url": "https://www.ensb.dz/"
+  },
+  {
+    "en": "Higher Normal School of Constantine",
+    "fr": "École Normale Supérieure de Constantine",
+    "ar": "المدرسة العليا للأساتذة بقسنطينة",
+    "url": "https://www.ensc.dz/"
+  },
+  {
+    "en": "Higher Normal School of Bou Saâda",
+    "fr": "École Normale Supérieure de Bou Saâda",
+    "ar": "المدرسة العليا للأساتذة ببوسعادة",
+    "url": "https://www.ens-bousaada.dz/"
+  },
+  {
+    "en": "Higher Normal School of Sétif",
+    "fr": "École Normale Supérieure de Sétif",
+    "ar": "المدرسة العليا للأساتذة بسطيف",
+    "url": "https://www.ens-setif.dz/"
+  },
+  {
+    "en": "Higher Normal School of Ouargla",
+    "fr": "École Normale Supérieure de Ouargla",
+    "ar": "المدرسة العليا للأساتذة بورقلة",
+    "url": "https://www.ens-ouargla.dz/"
+  }
+],
+ "spr-tcn": [
+	{
+    "en": "University of Science and Technology of Oran Mohamed-Boudiaf",
+    "fr": "Université des Sciences et de la Technologie d'Oran Mohamed-Boudiaf",
+    "ar": "جامعة العلوم والتكنولوجيا محمد بوضياف وهران",
+    "url": "https://www.usto-mb.dz/"
+  },
+  {
+    "en": "Abdelhamid Ibn Badis University of Mostaganem",
+    "fr": "Université Abdelhamid Ibn Badis de Mostaganem",
+    "ar": "جامعة عبد الحميد بن باديس مستغانم",
+    "url": "https://www.univ-mosta.dz/"
+  },
+  {
+    "en": "Nour Bachir University Center of El Bayadh",
+    "fr": "Centre Universitaire Nour Bachir d'El Bayadh",
+    "ar": "المركز الجامعي نور البشير البيض",
+    "url": "https://www.cu-elbayadh.dz/"
+  },
+  {
+    "en": "Mohamed Seddik Ben Yahia University of Jijel",
+    "fr": "Université Mohamed Seddik Ben Yahia de Jijel",
+    "ar": "جامعة محمد الصديق بن يحيى جيجل",
+    "url": "https://www.univ-jijel.dz/"
+  },
+  {
+    "en": "Ferhat Abbas University Setif 2",
+    "fr": "Université Ferhat Abbas Sétif 2",
+    "ar": "جامعة فرحات عباس سطيف 2",
+    "url": "https://www.univ-setif2.dz/"
+  },
+  {
+    "en": "Abderrahmane Mira University of Béjaïa",
+    "fr": "Université Abderrahmane Mira de Béjaïa",
+    "ar": "جامعة عبد الرحمن ميرة بجاية",
+    "url": "https://www.univ-bejaia.dz/"
+  },
+  {
+    "en": "M'Hamed Bougara University of Boumerdès",
+    "fr": "Université M'Hamed Bougara de Boumerdès",
+    "ar": "جامعة امحمد بوڤرة بومرداس",
+    "url": "https://www.univ-boumerdes.dz/"
+  },
+  {
+    "en": "Amar Telidji University of Laghouat",
+    "fr": "Université Amar Telidji de Laghouat",
+    "ar": "جامعة عمار ثليجي الأغواط",
+    "url": "https://lagh-univ.dz/"
+  },
+  {
+    "en": "Mustapha Ben Boulaid University of Batna 2",
+    "fr": "Université Mustapha Ben Boulaid de Batna 2",
+    "ar": "جامعة مصطفى بن بولعيد باتنة 2",
+    "url": "https://univ-batna2.dz/"
+  },
+  {
+    "en": "University of Algiers 3",
+    "fr": "Université d'Alger 3",
+    "ar": "جامعة الجزائر 3",
+    "url": "https://www.univ-alger3.dz/"
+  },
+  {
+    "en": "Hassiba Benbouali University of Chlef",
+    "fr": "Université Hassiba Benbouali de Chlef",
+    "ar": "جامعة حسيبة بن بوعلي الشلف",
+    "url": "https://www.univ-chlef.dz/"
+  },
+  {
+    "en": "Larbi Ben M'hidi University of Oum El Bouaghi",
+    "fr": "Université Larbi Ben M'hidi d'Oum El Bouaghi",
+    "ar": "جامعة العربي بن مهيدي أم البواقي",
+    "url": "https://www.univ-oeb.dz/"
+  },
+  {
+    "en": "Mohamed Khider University of Biskra",
+    "fr": "Université Mohamed Khider de Biskra",
+    "ar": "جامعة محمد خيضر بسكرة",
+    "url": "https://www.univ-biskra.dz/"
+  },
+  {
+    "en": "Akli Mohand Oulhadj University of Bouira",
+    "fr": "Université Akli Mohand Oulhadj de Bouira",
+    "ar": "جامعة أكلي محند أولحاج البويرة",
+    "url": "https://www.univ-bouira.dz/"
+  },
+  {
+    "en": "Larbi Tebessi University of Tébessa",
+    "fr": "Université Larbi Tebessi de Tébessa",
+    "ar": "جامعة العربي التبسي تبسة",
+    "url": "https://www.univ-tebessa.dz/"
+  },
+  {
+    "en": "Ziane Achour University of Djelfa",
+    "fr": "Université Ziane Achour de Djelfa",
+    "ar": "جامعة زيان عاشور الجلفة",
+    "url": "https://www.univ-djelfa.dz/"
+  },
+  {
+    "en": "Mohamed Cherif Messaadia University of Souk Ahras",
+    "fr": "Université Mohamed Cherif Messaadia de Souk Ahras",
+    "ar": "جامعة محمد الشريف مساعدية سوق أهراس",
+    "url": "https://www.univ-soukahras.dz/"
+  },
+{
+    "en": "Badji Mokhtar University of Annaba",
+    "fr": "Université Badji Mokhtar d'Annaba",
+    "ar": "جامعة باجي مختار عنابة",
+    "url": "https://www.univ-annaba.dz/"
+  },
+  {
+    "en": "Abdelhamid Mehri University of Constantine 2",
+    "fr": "Université Abdelhamid Mehri de Constantine 2",
+    "ar": "جامعة عبد الحميد مهري قسنطينة 2",
+    "url": "https://www.univ-constantine2.dz/"
+  },
+  {
+    "en": "University of Tissemsilt",
+    "fr": "Université de Tissemsilt",
+    "ar": "جامعة تيسمسيلت",
+    "url": "https://www.univ-tissemsilt.dz/"
+  },
+  {
+    "en": "University of Tamanrasset",
+    "fr": "Université de Tamanrasset",
+    "ar": "جامعة تمنراست",
+    "url": "https://univ-tam.dz/"
+  },
+  {
+    "en": "Kasdi Merbah University of Ouargla",
+    "fr": "Université Kasdi Merbah d'Ouargla",
+    "ar": "جامعة قاصدي مرباح ورقلة",
+    "url": "https://www.univ-ouargla.dz/"
+  },
+  {
+    "en": "Mohamed Boudiaf University of M'Sila",
+    "fr": "Université Mohamed Boudiaf de M'Sila",
+    "ar": "جامعة محمد بوضياف المسيلة",
+    "url": "https://www.univ-msila.dz/"
+  },
+  {
+    "en": "Djilali Bounaama University of Khemis Miliana",
+    "fr": "Université Djilali Bounaama de Khemis Miliana",
+    "ar": "جامعة جيلالي بونعامة خميس مليانة",
+    "url": "https://www.univ-dbkm.dz/"
+  }
+]
+}

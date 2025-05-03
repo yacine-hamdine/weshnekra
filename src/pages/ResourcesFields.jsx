@@ -3,64 +3,45 @@ import Loading from "../components/Loading";
 import { useNavigate, useParams } from "react-router-dom";
 import "../styles/resources.css";
 import toCamelCase from "../utils/toCamelCase";
+import useResourcesData from "../hooks/useResourcesData";
 
+// REFACTORED BY CHATGPT 
 const ResourcesFields = () => {
-    const { category } = useParams();
-    const { language, translations, loading } = useLanguage();
-    const data = translations;
+  const { category } = useParams();
+  const { translations, loading: languageLoading } = useLanguage();
+  const { data: loadedResourcesData, loading: resourcesLoading, error } = useResourcesData(category);
 
-    const navigate = useNavigate();
-    const categoryName = `${toCamelCase(category)?.replace("-", "")}Name`;
-  
-    if (loading) return <Loading/>;
-  
-    return (
-      <>
-        <section id="category-header">
-            <h1 className="title">{data[categoryName] || ""}</h1>
-        </section>
-        <section id="category-fields">
-            <div id="field-name">
-                <h2 className="subtitle">{data[`${toCamelCase(category)?.replace("-", "")}Fields`] || ""}</h2>
+  const navigate = useNavigate();
+  const categoryName = toCamelCase(category)?.replace("-", "") + "Name";
+
+  if (languageLoading || resourcesLoading) return <Loading />;
+  if (error) return <div className="error">Error loading resources: {error}</div>;
+
+  return (
+    <>
+      <section id="category-header">
+        <h1 className="title">{translations[categoryName] || ""}</h1>
+      </section>
+      <section id="category-fields">
+        {
+          loadedResourcesData?.resources &&
+          Object.entries(loadedResourcesData.resources).map(([fieldKey, institutions], index) => (
+            <div key={index} className="field">
+              <h2 className="subtitle">
+                {translations[toCamelCase(fieldKey).replace("-", "") + "Name"]}
+              </h2>
+              <p className="text">
+                <b className="lg-txt">{Object.entries(institutions).length}</b> {translations.institutions}
+              </p>
+              <button className="main-btn" onClick={() => navigate(`/resources/${category}/${fieldKey}`)}>
+                {translations.viewResources}
+              </button>
             </div>
-            <div className="fields">
-                {
-                    data[`${toCamelCase(category)?.replace("-", "")}FieldsData`]?.map((field, index) => (
-                        <div key={index} className="field" onClick={() => navigate(`/resources/${category}/${field.name}`)}>
-                            <img src={field.icon} alt={field.name} />
-                            <h3 className="subtitle">{field.name}</h3>
-                        </div>
-                    ))
-                }
-            </div>
-        </section>
-        {/* <section id="category-cards">
-            <div id="category-name">
-                <h2 className="subtitle">{data[`${toCamelCase(category)?.replace("-", "")}Fields`] || ""}</h2>
-            </div>
-            <div className="cards">
-                {
-                    data[`${toCamelCase(category)?.replace("-", "")}FieldsData`]?.map((field, index) => (
-                        <div key={index} className="card">
-                            <div className="card-icon-and-name">
-                                <img src={field.icon} alt={field.name} />
-                                <h3 className="subtitle">{field.name}</h3>
-                            </div>
-                            <div className="card-data text">
-                                {field.description}
-                            </div>
-                            <div className="card-btn">
-                                <button className="main-btn" onClick={() => navigate(`/resources/${category}/${field.name}`)}>
-                                    {data.viewResources}
-                                </button>
-                            </div>
-                        </div>
-                    ))
-                }
-            </div>
-        </section> */}
-      </>
-    );
-  };
-  
-  export default ResourcesFields;
+          ))
+        }
+      </section>
+    </>
+  );
+};
+
+export default ResourcesFields;

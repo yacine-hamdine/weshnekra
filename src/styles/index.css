@@ -38,6 +38,10 @@ a{
   font-size: var(--txt-fs);
 }
 
+.lg-txt{
+  font-size: 1.3rem;
+}
+
 input, .main-btn, .secondary-btn, select, option{
   border: none;
   border-radius: 50px;

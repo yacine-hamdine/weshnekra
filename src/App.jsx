@@ -5,6 +5,7 @@ import StartQuiz from './pages/StartQuiz.jsx'
 import Results from './pages/Results.jsx'
 import Resources from './pages/Resources.jsx'
 import ResourcesFields from './pages/ResourcesFields.jsx'
+import ResourcesData from './pages/ResourcesData.jsx'
 import About from './pages/About.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -19,6 +20,7 @@ const Router = createBrowserRouter([
       { path: '/quiz', element: <Quiz />}, 
       { path: '/results/:quizType', element: <Results /> },
       { path: '/results', element: <Results /> },
+      { path: '/resources/:category/:field', element: <ResourcesData /> },
       { path: '/resources/:category', element: <ResourcesFields /> },
       { path: '/resources', element: <Resources /> },
       { path: '/about', element: <About /> },

@@ -39,7 +39,7 @@ export const fetchResources = async (db, category) => {
   const docSnap = await getDoc(docRef);
 
   if (docSnap.exists()) {
-    const resources = docSnap.data().fields || []; // Ensure fields is an array
+    const resources = docSnap.data() || {}; // Ensure fields is an array
     await saveToIndexedDB(category, resources);
     console.log("Loaded resources from Firestore");
     return resources;
