@@ -82,3 +82,10 @@
     gap: 10px;
     width: 100%;
 }
+
+@media screen and (min-width: 50px) and (max-width: 767px){
+    .field{
+        min-height: auto;
+        gap: 10px;
+    }
+}
